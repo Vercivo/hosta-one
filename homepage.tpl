@@ -55,7 +55,7 @@
     <section class="icon-grid">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
                             <i class="fas fa-rocket"></i>
@@ -64,7 +64,7 @@
                         <p>Start quickly with cleaner onboarding.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
                             <i class="fas fa-tasks"></i>
@@ -73,7 +73,7 @@
                         <p>Keep services and billing in one view.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
                             <i class="fas fa-paint-brush"></i>
@@ -82,7 +82,7 @@
                         <p>Modern and minimal instead of crowded.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
                             <i class="fas fa-life-ring"></i>
