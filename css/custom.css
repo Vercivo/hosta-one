@@ -370,7 +370,7 @@ a:focus {
 
 .icon-grid {
     padding: 4rem 0;
-    background: var(--theme-surface);
+    background: var(--theme-surface-soft);
 }
 
 .icon-grid .row > [class*="col-"] {
