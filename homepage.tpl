@@ -61,11 +61,8 @@
                 <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path d="M12.5 4.5c2.7 1 4.9 3.2 6 6-1.6 2.3-3.7 4.4-6 6-2.8-1-5-3.2-6-6 1-2.8 3.2-5 6-6Z"></path>
-                                <path d="M9.5 14.5 6 18"></path>
-                                <path d="m8 18-2 1 1-2"></path>
-                                <circle cx="14.5" cy="9.5" r="1"></circle>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" stroke="currentColor" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                             </svg>
                         </div>
                         <h5>Fast Setup</h5>
@@ -75,13 +72,11 @@
                 <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path d="M9 6h10"></path>
-                                <path d="M9 12h10"></path>
-                                <path d="M9 18h10"></path>
-                                <path d="m4 6 1.5 1.5L7.5 5.5"></path>
-                                <path d="m4 12 1.5 1.5L7.5 11.5"></path>
-                                <path d="m4 18 1.5 1.5L7.5 17.5"></path>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" stroke="currentColor" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
                             </svg>
                         </div>
                         <h5>Unified Management</h5>
@@ -91,11 +86,11 @@
                 <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <path d="m14.5 4.5 5 5"></path>
-                                <path d="m12 7 5 5"></path>
-                                <path d="m10 9 5 5"></path>
-                                <path d="m4 20c3 0 5-2 5-5 0-.9.3-1.8.9-2.5l2.1-2.5 4 4-2.5 2.1A5.1 5.1 0 0 1 11 17c0 2-1.2 3-3 3H4Z"></path>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" stroke="currentColor" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.586 7.586"></path>
+                                <circle cx="11" cy="11" r="2"></circle>
                             </svg>
                         </div>
                         <h5>Professional Look</h5>
@@ -105,13 +100,8 @@
                 <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                <circle cx="12" cy="12" r="8"></circle>
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <path d="m7 7 3 3"></path>
-                                <path d="m14 14 3 3"></path>
-                                <path d="m17 7-3 3"></path>
-                                <path d="m10 14-3 3"></path>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" stroke="currentColor" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                             </svg>
                         </div>
                         <h5>Support Ready</h5>
