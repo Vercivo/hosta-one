@@ -1,0 +1,5 @@
+name: Hosta Theme
+author: Gemini
+description: A new theme for WHMCS.
+version: 1.0
+core: "8.x"
