@@ -1,3 +1,4 @@
+<!-- Theme header is loading -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{$pagetitle} - {$companyname}</title>
 
-    <link href="templates/hosta/css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
