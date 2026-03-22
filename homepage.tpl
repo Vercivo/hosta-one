@@ -1,16 +1,19 @@
 <style>
     .master-breadcrumb,
-    .home-domain-search {
+    .home-domain-search,
+    #frmDomainHomepage {
         display: none;
     }
 
     #main-body {
-        padding-top: 0;
+        padding-top: 0 !important;
     }
 
-    #main-body > .container {
+    #main-body > .container,
+    #main-body .primary-content {
         max-width: none;
-        padding: 0;
+        padding: 0 !important;
+        margin-top: 0 !important;
     }
 </style>
 
