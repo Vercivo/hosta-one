@@ -94,63 +94,100 @@
 </section>
 
     {if !empty($productGroups) || $registerdomainenabled || $transferdomainenabled}
-        <section class="minimal-section">
-            <div class="minimal-wrap">
-                <div class="minimal-heading">
-                    <span class="minimal-kicker">Solutions</span>
-                    <h2>Choose the service that fits your next launch.</h2>
-                    <p>
-                        The homepage now works like a proper modern landing page: simple message first, service options
-                        second, and a smoother path into the client experience.
-                    </p>
-                </div>
-
-                <div class="minimal-card-grid">
-                    {foreach $productGroups as $productGroup}
-                        <article class="minimal-card">
-                            <span class="minimal-card__label">Hosting</span>
-                            <h3>{$productGroup->name}</h3>
-                            <p>
-                                {if $productGroup->tagline}
-                                    {$productGroup->tagline}
-                                {else}
-                                    Reliable hosting built for teams that want a cleaner operational setup.
-                                {/if}
-                            </p>
-                            <a href="{$productGroup->getRoutePath()}" class="minimal-card__link">
-                                Explore plans
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </article>
-                    {/foreach}
-
-                    {if $registerdomainenabled}
-                        <article class="minimal-card">
-                            <span class="minimal-card__label">Domains</span>
-                            <h3>{lang key='orderregisterdomain'}</h3>
-                            <p>{lang key='secureYourDomain'}</p>
-                            <a href="{$WEB_ROOT}/cart.php?a=add&domain=register" class="minimal-card__link">
-                                {lang key='navdomainsearch'}
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </article>
-                    {/if}
-
-                    {if $transferdomainenabled}
-                        <article class="minimal-card">
-                            <span class="minimal-card__label">Transfer</span>
-                            <h3>{lang key='transferYourDomain'}</h3>
-                            <p>{lang key='transferExtend'}</p>
-                            <a href="{$WEB_ROOT}/cart.php?a=add&domain=transfer" class="minimal-card__link">
-                                Transfer domain
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </article>
-                    {/if}
+    <section class="pricing-table-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="minimal-heading text-center">
+                        <span class="minimal-kicker">Pricing</span>
+                        <h2>Find the Perfect Plan for Your Business</h2>
+                        <p>
+                            We offer a variety of plans to fit your needs and budget.
+                            All plans come with our 30-day money-back guarantee.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
-    {/if}
+            <div class="row">
+                {foreach $productGroups as $productGroup}
+                    <div class="col-lg-4">
+                        <div class="pricing-table">
+                            <div class="pricing-table__header">
+                                <h3>{$productGroup.name}</h3>
+                                <p>{$productGroup.tagline}</p>
+                            </div>
+                            <div class="pricing-table__price">
+                                <span class="price">{$productGroup.order}</span>
+                                <span class="period">/mo</span>
+                            </div>
+                            <div class="pricing-table__features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Feature 1</li>
+                                    <li><i class="fas fa-check"></i> Feature 2</li>
+                                    <li><i class="fas fa-check"></i> Feature 3</li>
+                                    <li><i class="fas fa-check"></i> Feature 4</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-table__footer">
+                                <a href="{$productGroup->getRoutePath()}" class="btn btn-primary">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                {/foreach}
+                {if $registerdomainenabled}
+                    <div class="col-lg-4">
+                        <div class="pricing-table">
+                            <div class="pricing-table__header">
+                                <h3>{lang key='orderregisterdomain'}</h3>
+                                <p>{lang key='secureYourDomain'}</p>
+                            </div>
+                            <div class="pricing-table__price">
+                                <span class="price"></span>
+                                <span class="period"></span>
+                            </div>
+                            <div class="pricing-table__features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 500+ TLDs</li>
+                                    <li><i class="fas fa-check"></i> Free DNS Management</li>
+                                    <li><i class="fas fa-check"></i> ID Protection</li>
+                                    <li><i class="fas fa-check"></i> Easy Transfers</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-table__footer">
+                                <a href="{$WEB_ROOT}/cart.php?a=add&domain=register" class="btn btn-primary">{lang key='navdomainsearch'}</a>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+                {if $transferdomainenabled}
+                    <div class="col-lg-4">
+                        <div class="pricing-table">
+                            <div class="pricing-table__header">
+                                <h3>{lang key='transferYourDomain'}</h3>
+                                <p>{lang key='transferExtend'}</p>
+                            </div>
+                            <div class="pricing-table__price">
+                                <span class="price"></span>
+                                <span class="period"></span>
+                            </div>
+                            <div class="pricing-table__features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Free 1-Year Extension</li>
+                                    <li><i class="fas fa-check"></i> No Downtime</li>
+                                    <li><i class="fas fa-check"></i> Keep Existing Nameservers</li>
+                                    <li><i class="fas fa-check"></i> Simple & Fast</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-table__footer">
+                                <a href="{$WEB_ROOT}/cart.php?a=add&domain=transfer" class="btn btn-primary">Transfer Domain</a>
+                            </div>
+                        </div>
+                    </div>
+                {/if}
+            </div>
+        </div>
+    </section>
+{/if}
 
     <section class="minimal-section minimal-section--soft">
         <div class="minimal-wrap">
