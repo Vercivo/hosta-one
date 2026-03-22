@@ -14,99 +14,100 @@
     }
 </style>
 
-<div class="clean-landing">
-    <section class="clean-hero">
-        <div class="clean-shell">
-            <div class="clean-hero__grid">
-                <div class="clean-hero__copy">
-                    <span class="clean-kicker">Managed Hosting Platform</span>
-                    <h1>Clean infrastructure, clear support, and a client experience that feels premium.</h1>
+<div class="minimal-landing">
+    <section class="minimal-hero">
+        <div class="minimal-wrap">
+            <div class="minimal-hero__layout">
+                <div class="minimal-hero__copy">
+                    <span class="minimal-kicker">Modern Hosting Platform</span>
+                    <h1>Minimal design, modern hosting, and a cleaner customer journey.</h1>
                     <p>
-                        {$companyname} helps modern businesses run hosting, domains, billing, and support from one
-                        dependable platform with a calmer, more professional customer journey.
+                        {$companyname} brings hosting, domains, billing, and support into one calm interface that
+                        feels more premium, more organized, and easier to trust.
                     </p>
 
-                    <div class="clean-hero__actions">
-                        <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">View Solutions</a>
+                    <div class="minimal-hero__actions">
+                        <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">Explore Hosting</a>
                         {if $loggedin}
                             <a href="{$WEB_ROOT}/clientarea.php" class="btn btn-outline-primary btn-lg">Open Client Area</a>
                         {else}
                             <a href="{$WEB_ROOT}/login.php" class="btn btn-outline-primary btn-lg">Client Login</a>
                         {/if}
                     </div>
+
+                    <div class="minimal-hero__meta">
+                        <span>99.99% uptime target</span>
+                        <span>24/7 support access</span>
+                        <span>Hosting and billing in one portal</span>
+                    </div>
                 </div>
 
-                <aside class="clean-panel">
-                    <div class="clean-panel__row">
-                        <small>Availability</small>
-                        <strong>99.99% uptime target with steady operational oversight</strong>
-                    </div>
-                    <div class="clean-panel__row">
+                <aside class="minimal-panel">
+                    <article class="minimal-panel__item">
+                        <small>Platform</small>
+                        <strong>Hosting, domains, invoices, and tickets together</strong>
+                    </article>
+                    <article class="minimal-panel__item">
                         <small>Support</small>
-                        <strong>Account, billing, and technical requests handled in one workflow</strong>
-                    </div>
-                    <div class="clean-panel__row">
-                        <small>Control</small>
-                        <strong>Domains, services, invoices, and tickets visible from one portal</strong>
-                    </div>
+                        <strong>Simple routes for announcements, status, knowledge base, and tickets</strong>
+                    </article>
+                    <article class="minimal-panel__item">
+                        <small>Experience</small>
+                        <strong>Full-width layout with clearer spacing and less visual clutter</strong>
+                    </article>
                 </aside>
             </div>
         </div>
     </section>
 
-    <section class="clean-strip">
-        <div class="clean-shell">
-            <div class="clean-metrics">
-                <article class="clean-metric">
-                    <strong>24/7</strong>
-                    <span>support coverage</span>
-                </article>
-                <article class="clean-metric">
-                    <strong>1 portal</strong>
-                    <span>for services and billing</span>
-                </article>
-                <article class="clean-metric">
+    <section class="minimal-strip">
+        <div class="minimal-wrap">
+            <div class="minimal-strip__grid">
+                <article class="minimal-strip__item">
                     <strong>Fast setup</strong>
-                    <span>for new hosting and domains</span>
+                    <span>Start quickly with cleaner onboarding.</span>
                 </article>
-                <article class="clean-metric">
-                    <strong>Clean UX</strong>
-                    <span>for both visitors and clients</span>
+                <article class="minimal-strip__item">
+                    <strong>Unified management</strong>
+                    <span>Keep services and billing in one view.</span>
+                </article>
+                <article class="minimal-strip__item">
+                    <strong>Professional look</strong>
+                    <span>Modern and minimal instead of crowded.</span>
+                </article>
+                <article class="minimal-strip__item">
+                    <strong>Support ready</strong>
+                    <span>Key help paths stay visible and simple.</span>
                 </article>
             </div>
         </div>
     </section>
 
     {if !empty($productGroups) || $registerdomainenabled || $transferdomainenabled}
-        <section class="clean-band">
-            <div class="clean-shell">
-                <div class="clean-heading">
-                    <span class="clean-kicker">Solutions</span>
-                    <h2>Choose the right starting point for your next deployment.</h2>
+        <section class="minimal-section">
+            <div class="minimal-wrap">
+                <div class="minimal-heading">
+                    <span class="minimal-kicker">Solutions</span>
+                    <h2>Choose the service that fits your next launch.</h2>
                     <p>
-                        The homepage now behaves like a proper landing page: simple message first, commercial options
-                        second, and support paths always easy to reach.
+                        The homepage now works like a proper modern landing page: simple message first, service options
+                        second, and a smoother path into the client experience.
                     </p>
                 </div>
 
-                <div class="clean-solution-grid">
+                <div class="minimal-card-grid">
                     {foreach $productGroups as $productGroup}
-                        <article class="clean-card">
-                            <span class="clean-card__tag">Hosting</span>
+                        <article class="minimal-card">
+                            <span class="minimal-card__label">Hosting</span>
                             <h3>{$productGroup->name}</h3>
                             <p>
                                 {if $productGroup->tagline}
                                     {$productGroup->tagline}
                                 {else}
-                                    Reliable hosting designed for teams that want performance and cleaner operations.
+                                    Reliable hosting built for teams that want a cleaner operational setup.
                                 {/if}
                             </p>
-                            <ul class="clean-card__list">
-                                <li>Stable service delivery</li>
-                                <li>Customer-friendly provisioning flow</li>
-                                <li>Billing and support in one system</li>
-                            </ul>
-                            <a href="{$productGroup->getRoutePath()}" class="clean-card__link">
+                            <a href="{$productGroup->getRoutePath()}" class="minimal-card__link">
                                 Explore plans
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -114,16 +115,11 @@
                     {/foreach}
 
                     {if $registerdomainenabled}
-                        <article class="clean-card clean-card--soft">
-                            <span class="clean-card__tag">Domains</span>
+                        <article class="minimal-card">
+                            <span class="minimal-card__label">Domains</span>
                             <h3>{lang key='orderregisterdomain'}</h3>
                             <p>{lang key='secureYourDomain'}</p>
-                            <ul class="clean-card__list">
-                                <li>Search and register from the same journey</li>
-                                <li>Keep digital assets under one roof</li>
-                                <li>Cleaner renewal visibility for clients</li>
-                            </ul>
-                            <a href="{$WEB_ROOT}/cart.php?a=add&domain=register" class="clean-card__link">
+                            <a href="{$WEB_ROOT}/cart.php?a=add&domain=register" class="minimal-card__link">
                                 {lang key='navdomainsearch'}
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -131,17 +127,12 @@
                     {/if}
 
                     {if $transferdomainenabled}
-                        <article class="clean-card">
-                            <span class="clean-card__tag">Transfer</span>
+                        <article class="minimal-card">
+                            <span class="minimal-card__label">Transfer</span>
                             <h3>{lang key='transferYourDomain'}</h3>
                             <p>{lang key='transferExtend'}</p>
-                            <ul class="clean-card__list">
-                                <li>Bring domain management into one portal</li>
-                                <li>Reduce vendor sprawl</li>
-                                <li>Keep support and billing closer together</li>
-                            </ul>
-                            <a href="{$WEB_ROOT}/cart.php?a=add&domain=transfer" class="clean-card__link">
-                                Transfer now
+                            <a href="{$WEB_ROOT}/cart.php?a=add&domain=transfer" class="minimal-card__link">
+                                Transfer domain
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                         </article>
@@ -151,80 +142,79 @@
         </section>
     {/if}
 
-    <section class="clean-band clean-band--soft">
-        <div class="clean-shell">
-            <div class="clean-split">
-                <div class="clean-split__copy">
-                    <span class="clean-kicker">Why This Design</span>
-                    <h2>Full width, cleaner spacing, and a quieter layout that feels more credible.</h2>
+    <section class="minimal-section minimal-section--soft">
+        <div class="minimal-wrap">
+            <div class="minimal-split">
+                <div class="minimal-split__copy">
+                    <span class="minimal-kicker">Why It Works</span>
+                    <h2>A lighter interface makes the whole theme feel more modern.</h2>
                     <p>
-                        Instead of a crowded hosting storefront, this version uses stronger whitespace, simpler
-                        hierarchy, and broad sections that feel more enterprise-friendly on both desktop and mobile.
+                        This direction removes extra noise and gives the theme stronger whitespace, cleaner card
+                        structure, and a more polished full-width rhythm across the homepage and client area.
                     </p>
                 </div>
 
-                <div class="clean-feature-list">
-                    <article class="clean-feature">
-                        <h3>Full-width presentation</h3>
-                        <p>Key sections stretch across the viewport while keeping readable inner spacing.</p>
+                <div class="minimal-feature-grid">
+                    <article class="minimal-feature">
+                        <h3>More space</h3>
+                        <p>Wide layouts and quieter surfaces make the page feel more premium.</p>
                     </article>
-                    <article class="clean-feature">
-                        <h3>Cleaner content rhythm</h3>
-                        <p>Fewer competing elements and more deliberate spacing make the page easier to trust.</p>
+                    <article class="minimal-feature">
+                        <h3>Less noise</h3>
+                        <p>Fewer decorative treatments keep attention on content and actions.</p>
                     </article>
-                    <article class="clean-feature">
-                        <h3>Safer WHMCS structure</h3>
-                        <p>The design stays inside a proper child-theme setup without broken custom wrappers.</p>
+                    <article class="minimal-feature">
+                        <h3>Better clarity</h3>
+                        <p>Visitors can reach products, support, and login paths faster.</p>
                     </article>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="clean-band">
-        <div class="clean-shell">
-            <div class="clean-heading clean-heading--center">
-                <span class="clean-kicker">Support</span>
-                <h2>Important help paths stay visible from the homepage.</h2>
+    <section class="minimal-section">
+        <div class="minimal-wrap">
+            <div class="minimal-heading minimal-heading--center">
+                <span class="minimal-kicker">Support</span>
+                <h2>Help stays close without overcrowding the page.</h2>
                 <p>
-                    Announcements, network status, documentation, and tickets are all still easy to reach without
-                    overloading the landing page.
+                    Important support destinations remain visible while the overall experience stays clean and minimal.
                 </p>
             </div>
 
-            <div class="clean-resource-grid">
-                <a href="{routePath('announcement-index')}" class="clean-resource">
-                    <span class="clean-resource__icon"><i class="fas fa-bullhorn"></i></span>
+            <div class="minimal-support-grid">
+                <a href="{routePath('announcement-index')}" class="minimal-support">
+                    <span class="minimal-support__icon"><i class="fas fa-bullhorn"></i></span>
                     <strong>{lang key='announcementstitle'}</strong>
-                    <p>Service notices and platform updates.</p>
+                    <p>Platform updates and important notices.</p>
                 </a>
-                <a href="serverstatus.php" class="clean-resource">
-                    <span class="clean-resource__icon"><i class="fas fa-server"></i></span>
+                <a href="serverstatus.php" class="minimal-support">
+                    <span class="minimal-support__icon"><i class="fas fa-server"></i></span>
                     <strong>{lang key='networkstatustitle'}</strong>
-                    <p>Operational visibility for hosted services.</p>
+                    <p>Status visibility for hosted services.</p>
                 </a>
-                <a href="{routePath('knowledgebase-index')}" class="clean-resource">
-                    <span class="clean-resource__icon"><i class="fas fa-book"></i></span>
+                <a href="{routePath('knowledgebase-index')}" class="minimal-support">
+                    <span class="minimal-support__icon"><i class="fas fa-book"></i></span>
                     <strong>{lang key='knowledgebasetitle'}</strong>
-                    <p>Quick answers for common client questions.</p>
+                    <p>Self-service guidance for common questions.</p>
                 </a>
-                <a href="submitticket.php" class="clean-resource">
-                    <span class="clean-resource__icon"><i class="fas fa-life-ring"></i></span>
+                <a href="submitticket.php" class="minimal-support">
+                    <span class="minimal-support__icon"><i class="fas fa-life-ring"></i></span>
                     <strong>{lang key='homepage.submitTicket'}</strong>
-                    <p>Direct path to account and technical support.</p>
+                    <p>Direct route into account and technical support.</p>
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="clean-cta">
-        <div class="clean-shell">
-            <div class="clean-cta__box">
+    <section class="minimal-cta">
+        <div class="minimal-wrap">
+            <div class="minimal-cta__box">
                 <div>
-                    <span class="clean-kicker clean-kicker--inverse">Get Started</span>
-                    <h2>Launch with a cleaner front end and a smoother client journey.</h2>
+                    <span class="minimal-kicker minimal-kicker--dark">Get Started</span>
+                    <h2>Launch with a cleaner front end and a smoother customer flow.</h2>
                 </div>
-                <div class="clean-cta__actions">
+                <div class="minimal-cta__actions">
                     <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">Start With Hosting</a>
                     <a href="contact.php" class="btn btn-outline-primary btn-lg">Talk To Sales</a>
                 </div>

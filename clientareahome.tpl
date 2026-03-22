@@ -1,72 +1,74 @@
 {include file="$template/includes/flashmessage.tpl"}
 
-<div class="portal-hero">
-    <div class="portal-hero__grid">
-        <div class="portal-hero__copy">
-            <span class="clean-kicker">Client Workspace</span>
+<div class="minimal-dashboard">
+    <div class="minimal-dashboard__hero">
+        <div class="minimal-dashboard__copy">
+            <span class="minimal-kicker">Client Area</span>
             <h1>
                 Welcome back{if $client.companyname}, {$client.companyname}{elseif $client.fullName}, {$client.fullName}{/if}.
             </h1>
             <p>
-                Manage hosting, domains, invoices, and support from one cleaner full-width dashboard.
+                Manage hosting, domains, billing, and support from a cleaner full-width workspace.
             </p>
 
-            <div class="portal-hero__actions">
+            <div class="minimal-dashboard__actions">
                 <a href="clientarea.php?action=services" class="btn btn-primary">Manage Services</a>
                 <a href="supporttickets.php" class="btn btn-outline-primary">View Tickets</a>
             </div>
         </div>
 
-        <article class="portal-stat">
-            <small>Active Services</small>
-            <strong>{$clientsstats.productsnumactive}</strong>
-        </article>
-        <article class="portal-stat">
-            <small>Open Tickets</small>
-            <strong>{$clientsstats.numactivetickets}</strong>
-        </article>
-        <article class="portal-stat">
-            <small>Unpaid Invoices</small>
-            <strong>{$clientsstats.numunpaidinvoices}</strong>
-        </article>
+        <div class="minimal-dashboard__stats">
+            <article class="minimal-dashboard__stat">
+                <small>Active Services</small>
+                <strong>{$clientsstats.productsnumactive}</strong>
+            </article>
+            <article class="minimal-dashboard__stat">
+                <small>Open Tickets</small>
+                <strong>{$clientsstats.numactivetickets}</strong>
+            </article>
+            <article class="minimal-dashboard__stat">
+                <small>Unpaid Invoices</small>
+                <strong>{$clientsstats.numunpaidinvoices}</strong>
+            </article>
+        </div>
     </div>
 </div>
 
-<div class="portal-links">
-    <a href="clientarea.php?action=services" class="portal-link">
-        <span class="portal-link__icon"><i class="fas fa-cube"></i></span>
+<div class="minimal-dashboard-links">
+    <a href="clientarea.php?action=services" class="minimal-dashboard-link">
+        <span class="minimal-dashboard-link__icon"><i class="fas fa-cube"></i></span>
         <small>{lang key='navservices'}</small>
         <strong>{$clientsstats.productsnumactive}</strong>
     </a>
 
     {if $clientsstats.numdomains || $registerdomainenabled || $transferdomainenabled}
-        <a href="clientarea.php?action=domains" class="portal-link">
-            <span class="portal-link__icon"><i class="fas fa-globe"></i></span>
+        <a href="clientarea.php?action=domains" class="minimal-dashboard-link">
+            <span class="minimal-dashboard-link__icon"><i class="fas fa-globe"></i></span>
             <small>{lang key='navdomains'}</small>
             <strong>{$clientsstats.numactivedomains}</strong>
         </a>
     {elseif $condlinks.affiliates && $clientsstats.isAffiliate}
-        <a href="affiliates.php" class="portal-link">
-            <span class="portal-link__icon"><i class="fas fa-handshake"></i></span>
+        <a href="affiliates.php" class="minimal-dashboard-link">
+            <span class="minimal-dashboard-link__icon"><i class="fas fa-handshake"></i></span>
             <small>Affiliates</small>
             <strong>{$clientsstats.numaffiliatesignups}</strong>
         </a>
     {else}
-        <a href="clientarea.php?action=quotes" class="portal-link">
-            <span class="portal-link__icon"><i class="fas fa-file-alt"></i></span>
+        <a href="clientarea.php?action=quotes" class="minimal-dashboard-link">
+            <span class="minimal-dashboard-link__icon"><i class="fas fa-file-alt"></i></span>
             <small>{lang key='quotes'}</small>
             <strong>{$clientsstats.numquotes}</strong>
         </a>
     {/if}
 
-    <a href="supporttickets.php" class="portal-link">
-        <span class="portal-link__icon"><i class="fas fa-comments"></i></span>
+    <a href="supporttickets.php" class="minimal-dashboard-link">
+        <span class="minimal-dashboard-link__icon"><i class="fas fa-comments"></i></span>
         <small>{lang key='navtickets'}</small>
         <strong>{$clientsstats.numactivetickets}</strong>
     </a>
 
-    <a href="clientarea.php?action=invoices" class="portal-link">
-        <span class="portal-link__icon"><i class="fas fa-credit-card"></i></span>
+    <a href="clientarea.php?action=invoices" class="minimal-dashboard-link">
+        <span class="minimal-dashboard-link__icon"><i class="fas fa-credit-card"></i></span>
         <small>{lang key='navinvoices'}</small>
         <strong>{$clientsstats.numunpaidinvoices}</strong>
     </a>
