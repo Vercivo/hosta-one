@@ -418,6 +418,17 @@ a:focus {
     margin-bottom: 1.5rem;
 }
 
+.icon-grid__icon svg {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 .icon-grid__item h5 {
     display: flex;
     align-items: center;

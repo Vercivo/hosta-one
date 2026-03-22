@@ -61,7 +61,12 @@
                 <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
-                            <i class="fas fa-rocket"></i>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M12.5 4.5c2.7 1 4.9 3.2 6 6-1.6 2.3-3.7 4.4-6 6-2.8-1-5-3.2-6-6 1-2.8 3.2-5 6-6Z"></path>
+                                <path d="M9.5 14.5 6 18"></path>
+                                <path d="m8 18-2 1 1-2"></path>
+                                <circle cx="14.5" cy="9.5" r="1"></circle>
+                            </svg>
                         </div>
                         <h5>Fast Setup</h5>
                         <p>Start quickly with cleaner onboarding.</p>
@@ -70,7 +75,14 @@
                 <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
-                            <i class="fas fa-tasks"></i>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M9 6h10"></path>
+                                <path d="M9 12h10"></path>
+                                <path d="M9 18h10"></path>
+                                <path d="m4 6 1.5 1.5L7.5 5.5"></path>
+                                <path d="m4 12 1.5 1.5L7.5 11.5"></path>
+                                <path d="m4 18 1.5 1.5L7.5 17.5"></path>
+                            </svg>
                         </div>
                         <h5>Unified Management</h5>
                         <p>Keep services and billing in one view.</p>
@@ -79,7 +91,12 @@
                 <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
-                            <i class="fas fa-paint-brush"></i>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="m14.5 4.5 5 5"></path>
+                                <path d="m12 7 5 5"></path>
+                                <path d="m10 9 5 5"></path>
+                                <path d="m4 20c3 0 5-2 5-5 0-.9.3-1.8.9-2.5l2.1-2.5 4 4-2.5 2.1A5.1 5.1 0 0 1 11 17c0 2-1.2 3-3 3H4Z"></path>
+                            </svg>
                         </div>
                         <h5>Professional Look</h5>
                         <p>Modern and minimal instead of crowded.</p>
@@ -88,7 +105,14 @@
                 <div class="col-lg-3">
                     <div class="icon-grid__item">
                         <div class="icon-grid__icon">
-                            <i class="fas fa-life-ring"></i>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <circle cx="12" cy="12" r="8"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="m7 7 3 3"></path>
+                                <path d="m14 14 3 3"></path>
+                                <path d="m17 7-3 3"></path>
+                                <path d="m10 14-3 3"></path>
+                            </svg>
                         </div>
                         <h5>Support Ready</h5>
                         <p>Key help paths stay visible and simple.</p>
