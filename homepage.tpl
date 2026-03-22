@@ -20,10 +20,10 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="interactive-hero__content">
-                        <span class="interactive-kicker">Interactive Hosting</span>
-                        <h1>Find Your Perfect Plan</h1>
+                        <span class="interactive-kicker">Modern Hosting</span>
+                        <h1>Experience the Future of Web Hosting</h1>
                         <p>
-                            Use our interactive calculator to find the perfect hosting plan for your needs.
+                            Our platform is designed to be fast, reliable, and easy to use.
                             Get started in just a few clicks.
                         </p>
                         <div class="interactive-hero__actions">
@@ -37,62 +37,17 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="interactive-calculator">
-                        <div class="interactive-calculator__header">
-                            <h5>Estimate Your Cost</h5>
-                        </div>
-                        <div class="interactive-calculator__body">
-                            <div class="form-group">
-                                <label for="visitors">Monthly Visitors</label>
-                                <input type="range" class="form-range" id="visitors" min="1" max="5" value="2">
-                                <div class="d-flex justify-content-between">
-                                    <span>10k</span>
-                                    <span>50k</span>
-                                    <span>100k</span>
-                                    <span>500k</span>
-                                    <span>1M+</span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="storage">Storage</label>
-                                <input type="range" class="form-range" id="storage" min="1" max="5" value="2">
-                                <div class="d-flex justify-content-between">
-                                    <span>10GB</span>
-                                    <span>50GB</span>
-                                    <span>100GB</span>
-                                    <span>500GB</span>
-                                    <span>1TB+</span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Addons</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="daily-backups">
-                                    <label class="form-check-label" for="daily-backups">
-                                        Daily Backups
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="ddos-protection">
-                                    <label class="form-check-label" for="ddos-protection">
-                                        DDoS Protection
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="interactive-calculator__footer">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span>Estimated Cost:</span>
-                                <span class="price">$25/mo</span>
-                            </div>
-                            <a href="#" class="btn btn-primary w-100 mt-3">Get Started</a>
-                        </div>
+                    <div class="interactive-animation">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="minimal-strip">
+    </section>    <section class="minimal-strip">
         <div class="minimal-wrap">
             <div class="minimal-strip__grid">
                 <article class="minimal-strip__item">

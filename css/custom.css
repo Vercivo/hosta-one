@@ -856,29 +856,51 @@ a:focus {
     margin-bottom: 1rem;
 }
 
-.interactive-calculator {
-    background: var(--theme-surface);
-    border-radius: var(--theme-radius-xl);
-    border: 1px solid var(--theme-line);
-    box-shadow: var(--theme-shadow-md);
-    padding: 2rem;
+.interactive-animation {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.interactive-calculator__header {
-    margin-bottom: 1.5rem;
+.interactive-animation .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--theme-brand);
+    border-radius: 50%;
+    animation: dot-animation 4s infinite ease-in-out;
 }
 
-.interactive-calculator__header h5 {
-    font-weight: 700;
-    color: var(--theme-ink);
+.interactive-animation .dot:nth-child(2) {
+    animation-delay: 0.2s;
 }
 
-.interactive-calculator__body .form-group {
-    margin-bottom: 1.5rem;
+.interactive-animation .dot:nth-child(3) {
+    animation-delay: 0.4s;
 }
 
-.interactive-calculator__footer .price {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--theme-ink);
+.interactive-animation .dot:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.interactive-animation .dot:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes dot-animation {
+    0% {
+        transform: scale(1) translateX(0px);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.5) translateX(100px) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) translateX(0px);
+        opacity: 0.7;
+    }
 }
