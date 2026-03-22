@@ -11,8 +11,10 @@
 
     #main-body > .container,
     #main-body .primary-content {
-        max-width: none;
+        max-width: var(--theme-shell-max) !important;
         padding: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
         margin-top: 0 !important;
     }
 </style>
@@ -199,7 +201,7 @@
                     <h2>A lighter interface makes the whole theme feel more modern.</h2>
                     <p>
                         This direction removes extra noise and gives the theme stronger whitespace, cleaner card
-                        structure, and a more polished full-width rhythm across the homepage and client area.
+                        structure, and a more polished rhythm across the homepage and client area.
                     </p>
                 </div>
 

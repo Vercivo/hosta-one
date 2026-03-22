@@ -8,7 +8,7 @@
                 Welcome back{if $client.companyname}, {$client.companyname}{elseif $client.fullName}, {$client.fullName}{/if}.
             </h1>
             <p>
-                Manage hosting, domains, billing, and support from a cleaner full-width workspace.
+                Manage hosting, domains, billing, and support from a cleaner workspace.
             </p>
 
             <div class="minimal-dashboard__actions">
