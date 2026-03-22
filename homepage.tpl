@@ -50,28 +50,48 @@
                 </div>
             </div>
         </div>
-    </section>    <section class="minimal-strip">
-        <div class="minimal-wrap">
-            <div class="minimal-strip__grid">
-                <article class="minimal-strip__item">
-                    <strong>Fast setup</strong>
-                    <span>Start quickly with cleaner onboarding.</span>
-                </article>
-                <article class="minimal-strip__item">
-                    <strong>Unified management</strong>
-                    <span>Keep services and billing in one view.</span>
-                </article>
-                <article class="minimal-strip__item">
-                    <strong>Professional look</strong>
-                    <span>Modern and minimal instead of crowded.</span>
-                </article>
-                <article class="minimal-strip__item">
-                    <strong>Support ready</strong>
-                    <span>Key help paths stay visible and simple.</span>
-                </article>
+    </section>    <section class="icon-grid">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="icon-grid__item">
+                    <div class="icon-grid__icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h5>Fast Setup</h5>
+                    <p>Start quickly with cleaner onboarding.</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="icon-grid__item">
+                    <div class="icon-grid__icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h5>Unified Management</h5>
+                    <p>Keep services and billing in one view.</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="icon-grid__item">
+                    <div class="icon-grid__icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h5>Professional Look</h5>
+                    <p>Modern and minimal instead of crowded.</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="icon-grid__item">
+                    <div class="icon-grid__icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <h5>Support Ready</h5>
+                    <p>Key help paths stay visible and simple.</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     {if !empty($productGroups) || $registerdomainenabled || $transferdomainenabled}
         <section class="minimal-section">
