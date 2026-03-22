@@ -1,75 +1,91 @@
 {include file="$template/includes/flashmessage.tpl"}
 
 <div class="hosta-dashboard-intro">
-    <div>
-        <span class="hosta-eyebrow">Client Area</span>
-        <h1 class="h2 mb-2">{lang key='homepage.yourAccount'}</h1>
-        <p class="text-muted mb-0">
-            Manage services, domains, billing, and support from one dashboard.
-        </p>
-    </div>
-    <div class="hosta-dashboard-intro__actions">
-        <a href="clientarea.php?action=services" class="btn btn-primary">
-            {lang key='homepage.manageServices'}
-        </a>
-        <a href="supporttickets.php" class="btn btn-outline-secondary">
-            {lang key='navtickets'}
-        </a>
+    <div class="row align-items-center">
+        <div class="col-lg-8">
+            <span class="hosta-eyebrow">Client Portal</span>
+            <h1 class="h2 mb-2">Welcome Back</h1>
+            <p class="text-muted mb-0">
+                Manage your services, domains, and billing from your enterprise dashboard.
+            </p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <div class="hosta-dashboard-intro__actions">
+                <a href="clientarea.php?action=services" class="btn btn-primary">
+                    <i class="fas fa-cube me-2"></i>Manage Services
+                </a>
+                <a href="supporttickets.php" class="btn btn-outline-secondary">
+                    <i class="fas fa-ticket-alt me-2"></i>Tickets
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="tiles mb-4">
+<div class="enterprise-tiles mb-4">
     <div class="row no-gutters">
         <div class="col-6 col-xl-3">
-            <a href="clientarea.php?action=services" class="tile">
-                <i class="fas fa-cube"></i>
-                <div class="stat">{$clientsstats.productsnumactive}</div>
-                <div class="title">{lang key='navservices'}</div>
-                <div class="highlight bg-color-blue"></div>
+            <a href="clientarea.php?action=services" class="enterprise-tile">
+                <div class="enterprise-tile__icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <div class="enterprise-tile__stat">{$clientsstats.productsnumactive}</div>
+                <div class="enterprise-tile__title">Active Services</div>
+                <div class="enterprise-tile__highlight bg-color-blue"></div>
             </a>
         </div>
         {if $clientsstats.numdomains || $registerdomainenabled || $transferdomainenabled}
             <div class="col-6 col-xl-3">
-                <a href="clientarea.php?action=domains" class="tile">
-                    <i class="fas fa-globe"></i>
-                    <div class="stat">{$clientsstats.numactivedomains}</div>
-                    <div class="title">{lang key='navdomains'}</div>
-                    <div class="highlight bg-color-green"></div>
+                <a href="clientarea.php?action=domains" class="enterprise-tile">
+                    <div class="enterprise-tile__icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="enterprise-tile__stat">{$clientsstats.numactivedomains}</div>
+                    <div class="enterprise-tile__title">Domains</div>
+                    <div class="enterprise-tile__highlight bg-color-green"></div>
                 </a>
             </div>
         {elseif $condlinks.affiliates && $clientsstats.isAffiliate}
             <div class="col-6 col-xl-3">
-                <a href="affiliates.php" class="tile">
-                    <i class="fas fa-shopping-cart"></i>
-                    <div class="stat">{$clientsstats.numaffiliatesignups}</div>
-                    <div class="title">{lang key='affiliatessignups'}</div>
-                    <div class="highlight bg-color-green"></div>
+                <a href="affiliates.php" class="enterprise-tile">
+                    <div class="enterprise-tile__icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="enterprise-tile__stat">{$clientsstats.numaffiliatesignups}</div>
+                    <div class="enterprise-tile__title">Affiliates</div>
+                    <div class="enterprise-tile__highlight bg-color-green"></div>
                 </a>
             </div>
         {else}
             <div class="col-6 col-xl-3">
-                <a href="clientarea.php?action=quotes" class="tile">
-                    <i class="far fa-file-alt"></i>
-                    <div class="stat">{$clientsstats.numquotes}</div>
-                    <div class="title">{lang key='quotes'}</div>
-                    <div class="highlight bg-color-green"></div>
+                <a href="clientarea.php?action=quotes" class="enterprise-tile">
+                    <div class="enterprise-tile__icon">
+                        <i class="far fa-file-alt"></i>
+                    </div>
+                    <div class="enterprise-tile__stat">{$clientsstats.numquotes}</div>
+                    <div class="enterprise-tile__title">Quotes</div>
+                    <div class="enterprise-tile__highlight bg-color-green"></div>
                 </a>
             </div>
         {/if}
         <div class="col-6 col-xl-3">
-            <a href="supporttickets.php" class="tile">
-                <i class="fas fa-comments"></i>
-                <div class="stat">{$clientsstats.numactivetickets}</div>
-                <div class="title">{lang key='navtickets'}</div>
-                <div class="highlight bg-color-red"></div>
+            <a href="supporttickets.php" class="enterprise-tile">
+                <div class="enterprise-tile__icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="enterprise-tile__stat">{$clientsstats.numactivetickets}</div>
+                <div class="enterprise-tile__title">Open Tickets</div>
+                <div class="enterprise-tile__highlight bg-color-red"></div>
             </a>
         </div>
         <div class="col-6 col-xl-3">
-            <a href="clientarea.php?action=invoices" class="tile">
-                <i class="fas fa-credit-card"></i>
-                <div class="stat">{$clientsstats.numunpaidinvoices}</div>
-                <div class="title">{lang key='navinvoices'}</div>
-                <div class="highlight bg-color-gold"></div>
+            <a href="clientarea.php?action=invoices" class="enterprise-tile">
+                <div class="enterprise-tile__icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <div class="enterprise-tile__stat">{$clientsstats.numunpaidinvoices}</div>
+                <div class="enterprise-tile__title">Unpaid Invoices</div>
+                <div class="enterprise-tile__highlight bg-color-gold"></div>
             </a>
         </div>
     </div>

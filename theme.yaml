@@ -1,5 +1,5 @@
-name: "Hosta Theme"
-author: "Gemini"
-description: "A WHMCS child theme for Hosta branding."
+name: "Hosta Enterprise Theme"
+author: "Hosta"
+description: "Enterprise-grade WHMCS theme with modern landing page design."
 config:
   parent: twenty-one
