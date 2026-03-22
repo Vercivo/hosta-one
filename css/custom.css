@@ -80,6 +80,7 @@ a:focus {
 .btn-primary {
     background: var(--theme-ink);
     border-color: var(--theme-ink);
+    color: #fff;
     box-shadow: 0 10px 24px rgba(16, 24, 40, 0.1);
 }
 
@@ -181,6 +182,10 @@ a:focus {
 
 #main-body {
     padding-top: 1rem;
+}
+
+.minimal-landing #main-body {
+    padding-top: 0;
 }
 
 .master-breadcrumb {
