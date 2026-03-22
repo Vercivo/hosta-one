@@ -5,6 +5,7 @@
     --theme-surface: #ffffff;
     --theme-surface-soft: #f0f4f8;
     --theme-shell-max: 1320px;
+    --theme-shell-gutter: clamp(12px, 1.8vw, 28px);
     --theme-ink: #101828;
     --theme-text: #344054;
     --theme-muted: #667085;
@@ -32,9 +33,7 @@ body,
 
 .container {
     width: 100%;
-    max-width: var(--theme-shell-max) !important;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: none !important;
     padding-left: clamp(20px, 4vw, 56px);
     padding-right: clamp(20px, 4vw, 56px);
 }
@@ -124,6 +123,9 @@ a:focus {
     position: sticky;
     top: 0;
     z-index: 1035;
+    width: min(calc(100% - (var(--theme-shell-gutter) * 2)), var(--theme-shell-max));
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #header .topbar {
@@ -185,6 +187,9 @@ a:focus {
 
 #main-body {
     padding-top: 1rem;
+    width: min(calc(100% - (var(--theme-shell-gutter) * 2)), var(--theme-shell-max));
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .minimal-landing #main-body {
@@ -242,7 +247,8 @@ a:focus {
 }
 
 .footer {
-    margin-top: 4rem;
+    width: min(calc(100% - (var(--theme-shell-gutter) * 2)), var(--theme-shell-max));
+    margin: 4rem auto 0;
     background: var(--theme-dark);
     color: rgba(255, 255, 255, 0.72);
     padding: 3rem 0 2rem;
@@ -266,9 +272,6 @@ a:focus {
 .minimal-dashboard-links,
 .client-home-cards {
     width: 100%;
-    max-width: var(--theme-shell-max);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .minimal-kicker {
@@ -816,6 +819,12 @@ a:focus {
     .container {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    #header,
+    #main-body,
+    .footer {
+        width: 100%;
     }
 
     .minimal-hero {

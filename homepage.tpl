@@ -11,10 +11,11 @@
 
     #main-body > .container,
     #main-body .primary-content {
-        max-width: var(--theme-shell-max) !important;
+        width: 100% !important;
+        max-width: none !important;
         padding: 0 !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
         margin-top: 0 !important;
     }
 </style>
