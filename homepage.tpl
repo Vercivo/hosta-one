@@ -15,51 +15,83 @@
 </style>
 
 <div class="minimal-landing">
-    <section class="minimal-hero">
-        <div class="minimal-wrap">
-            <div class="minimal-hero__layout">
-                <div class="minimal-hero__copy">
-                    <span class="minimal-kicker">Modern Hosting Platform</span>
-                    <h1>Minimal design, modern hosting, and a cleaner customer journey.</h1>
-                    <p>
-                        {$companyname} brings hosting, domains, billing, and support into one calm interface that
-                        feels more premium, more organized, and easier to trust.
-                    </p>
-
-                    <div class="minimal-hero__actions">
-                        <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">Explore Hosting</a>
-                        {if $loggedin}
-                            <a href="{$WEB_ROOT}/clientarea.php" class="btn btn-outline-primary btn-lg">Open Client Area</a>
-                        {else}
-                            <a href="{$WEB_ROOT}/login.php" class="btn btn-outline-primary btn-lg">Client Login</a>
-                        {/if}
-                    </div>
-
-                    <div class="minimal-hero__meta">
-                        <span>99.99% uptime target</span>
-                        <span>24/7 support access</span>
-                        <span>Hosting and billing in one portal</span>
+    <section class="interactive-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="interactive-hero__content">
+                        <span class="interactive-kicker">Interactive Hosting</span>
+                        <h1>Find Your Perfect Plan</h1>
+                        <p>
+                            Use our interactive calculator to find the perfect hosting plan for your needs.
+                            Get started in just a few clicks.
+                        </p>
+                        <div class="interactive-hero__actions">
+                            <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">View Plans</a>
+                            {if $loggedin}
+                                <a href="{$WEB_ROOT}/clientarea.php" class="btn btn-outline-primary btn-lg">Client Area</a>
+                            {else}
+                                <a href="{$WEB_ROOT}/login.php" class="btn btn-outline-primary btn-lg">Login</a>
+                            {/if}
+                        </div>
                     </div>
                 </div>
-
-                <aside class="minimal-panel">
-                    <article class="minimal-panel__item">
-                        <small>Platform</small>
-                        <strong>Hosting, domains, invoices, and tickets together</strong>
-                    </article>
-                    <article class="minimal-panel__item">
-                        <small>Support</small>
-                        <strong>Simple routes for announcements, status, knowledge base, and tickets</strong>
-                    </article>
-                    <article class="minimal-panel__item">
-                        <small>Experience</small>
-                        <strong>Full-width layout with clearer spacing and less visual clutter</strong>
-                    </article>
-                </aside>
+                <div class="col-lg-6">
+                    <div class="interactive-calculator">
+                        <div class="interactive-calculator__header">
+                            <h5>Estimate Your Cost</h5>
+                        </div>
+                        <div class="interactive-calculator__body">
+                            <div class="form-group">
+                                <label for="visitors">Monthly Visitors</label>
+                                <input type="range" class="form-range" id="visitors" min="1" max="5" value="2">
+                                <div class="d-flex justify-content-between">
+                                    <span>10k</span>
+                                    <span>50k</span>
+                                    <span>100k</span>
+                                    <span>500k</span>
+                                    <span>1M+</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="storage">Storage</label>
+                                <input type="range" class="form-range" id="storage" min="1" max="5" value="2">
+                                <div class="d-flex justify-content-between">
+                                    <span>10GB</span>
+                                    <span>50GB</span>
+                                    <span>100GB</span>
+                                    <span>500GB</span>
+                                    <span>1TB+</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Addons</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="daily-backups">
+                                    <label class="form-check-label" for="daily-backups">
+                                        Daily Backups
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="ddos-protection">
+                                    <label class="form-check-label" for="ddos-protection">
+                                        DDoS Protection
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interactive-calculator__footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Estimated Cost:</span>
+                                <span class="price">$25/mo</span>
+                            </div>
+                            <a href="#" class="btn btn-primary w-100 mt-3">Get Started</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
     <section class="minimal-strip">
         <div class="minimal-wrap">
             <div class="minimal-strip__grid">
