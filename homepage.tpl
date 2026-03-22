@@ -12,10 +12,10 @@
     #main-body > .container,
     #main-body .primary-content {
         width: 100% !important;
-        max-width: none !important;
+        max-width: 1320px !important;
         padding: 0 !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
         margin-top: 0 !important;
     }
 </style>
