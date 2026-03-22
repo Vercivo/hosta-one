@@ -381,22 +381,21 @@ a:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
-    min-height: 220px;
     text-align: center;
-    padding: 1.5rem;
-    border-radius: var(--theme-radius-lg);
-    background: var(--theme-surface);
-    border: 1px solid var(--theme-line);
-    box-shadow: var(--theme-shadow-sm);
-    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    padding: 2rem;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transition: none;
 }
 
 .icon-grid__item:hover {
-    transform: translateY(-4px);
-    border-color: rgba(37, 99, 235, 0.18);
-    box-shadow: var(--theme-shadow-md);
+    transform: none;
+    border-color: transparent;
+    box-shadow: none;
 }
 
 .icon-grid__icon {
@@ -405,7 +404,7 @@ a:focus {
     justify-content: center;
     height: 56px;
     font-size: 2.5rem;
-    color: var(--theme-dark);
+    color: var(--theme-ink);
     margin-bottom: 1.5rem;
 }
 
@@ -415,6 +414,7 @@ a:focus {
     min-height: 56px;
     margin-bottom: 0.85rem;
     text-align: center;
+    font-weight: 700;
 }
 
 .icon-grid__item p {

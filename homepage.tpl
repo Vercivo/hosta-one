@@ -50,48 +50,96 @@
                 </div>
             </div>
         </div>
-    </section>    <section class="icon-grid">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="icon-grid__item">
-                    <div class="icon-grid__icon">
-                        <i class="fas fa-rocket"></i>
+    </section>    <section class="feature-grid">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Fast Setup</h4>
+                        <p>Start quickly with cleaner onboarding.</p>
                     </div>
-                    <h5>Fast Setup</h5>
-                    <p>Start quickly with cleaner onboarding.</p>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="icon-grid__item">
-                    <div class="icon-grid__icon">
-                        <i class="fas fa-tasks"></i>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h4>Unified Management</h4>
+                        <p>Keep services and billing in one view.</p>
                     </div>
-                    <h5>Unified Management</h5>
-                    <p>Keep services and billing in one view.</p>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="icon-grid__item">
-                    <div class="icon-grid__icon">
-                        <i class="fas fa-paint-brush"></i>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4>Professional Look</h4>
+                        <p>Modern and minimal instead of crowded.</p>
                     </div>
-                    <h5>Professional Look</h5>
-                    <p>Modern and minimal instead of crowded.</p>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="icon-grid__item">
-                    <div class="icon-grid__icon">
-                        <i class="fas fa-life-ring"></i>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-life-ring"></i>
+                        </div>
+                        <h4>Support Ready</h4>
+                        <p>Key help paths stay visible and simple.</p>
                     </div>
-                    <h5>Support Ready</h5>
-                    <p>Key help paths stay visible and simple.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <style>
+        .feature-grid {
+            padding: 4rem 0;
+            background: #fff;
+        }
+        
+        .feature-card {
+            padding: 2rem;
+            border-radius: 12px;
+            background: #f8f9fa;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+        }
+        
+        .feature-card__icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        
+        .feature-card h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #1a1a2e;
+        }
+        
+        .feature-card p {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin: 0;
+            line-height: 1.6;
+        }
+    </style>
 
     {if !empty($productGroups) || $registerdomainenabled || $transferdomainenabled}
     <section class="pricing-table-section">
