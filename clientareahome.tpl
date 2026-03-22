@@ -1,78 +1,72 @@
 {include file="$template/includes/flashmessage.tpl"}
 
-<div class="client-command">
-    <div class="client-command__grid">
-        <div>
-            <span class="enterprise-kicker">Client Command Center</span>
-            <h1 class="client-command__title">
+<div class="portal-hero">
+    <div class="portal-hero__grid">
+        <div class="portal-hero__copy">
+            <span class="clean-kicker">Client Workspace</span>
+            <h1>
                 Welcome back{if $client.companyname}, {$client.companyname}{elseif $client.fullName}, {$client.fullName}{/if}.
             </h1>
-            <p class="client-command__desc">
-                Keep services, renewals, support activity, and account operations in one reliable workspace.
+            <p>
+                Manage hosting, domains, invoices, and support from one cleaner full-width dashboard.
             </p>
 
-            <div class="client-command__actions">
-                <a href="clientarea.php?action=services" class="btn btn-primary">
-                    Manage Services
-                </a>
-                <a href="supporttickets.php" class="btn btn-outline-primary">
-                    View Tickets
-                </a>
+            <div class="portal-hero__actions">
+                <a href="clientarea.php?action=services" class="btn btn-primary">Manage Services</a>
+                <a href="supporttickets.php" class="btn btn-outline-primary">View Tickets</a>
             </div>
         </div>
 
-        <div class="client-command__summary">
-            <article class="client-summary-card">
-                <small>Active Services</small>
-                <strong>{$clientsstats.productsnumactive}</strong>
-            </article>
-            <article class="client-summary-card">
-                <small>Open Tickets</small>
-                <strong>{$clientsstats.numactivetickets}</strong>
-            </article>
-            <article class="client-summary-card">
-                <small>Unpaid Invoices</small>
-                <strong>{$clientsstats.numunpaidinvoices}</strong>
-            </article>
-        </div>
+        <article class="portal-stat">
+            <small>Active Services</small>
+            <strong>{$clientsstats.productsnumactive}</strong>
+        </article>
+        <article class="portal-stat">
+            <small>Open Tickets</small>
+            <strong>{$clientsstats.numactivetickets}</strong>
+        </article>
+        <article class="portal-stat">
+            <small>Unpaid Invoices</small>
+            <strong>{$clientsstats.numunpaidinvoices}</strong>
+        </article>
     </div>
 </div>
 
-<div class="client-quicklinks">
-    <a href="clientarea.php?action=services" class="client-quicklink">
-        <span class="client-quicklink__icon"><i class="fas fa-cube"></i></span>
+<div class="portal-links">
+    <a href="clientarea.php?action=services" class="portal-link">
+        <span class="portal-link__icon"><i class="fas fa-cube"></i></span>
         <small>{lang key='navservices'}</small>
         <strong>{$clientsstats.productsnumactive}</strong>
     </a>
 
     {if $clientsstats.numdomains || $registerdomainenabled || $transferdomainenabled}
-        <a href="clientarea.php?action=domains" class="client-quicklink">
-            <span class="client-quicklink__icon"><i class="fas fa-globe"></i></span>
+        <a href="clientarea.php?action=domains" class="portal-link">
+            <span class="portal-link__icon"><i class="fas fa-globe"></i></span>
             <small>{lang key='navdomains'}</small>
             <strong>{$clientsstats.numactivedomains}</strong>
         </a>
     {elseif $condlinks.affiliates && $clientsstats.isAffiliate}
-        <a href="affiliates.php" class="client-quicklink">
-            <span class="client-quicklink__icon"><i class="fas fa-handshake"></i></span>
+        <a href="affiliates.php" class="portal-link">
+            <span class="portal-link__icon"><i class="fas fa-handshake"></i></span>
             <small>Affiliates</small>
             <strong>{$clientsstats.numaffiliatesignups}</strong>
         </a>
     {else}
-        <a href="clientarea.php?action=quotes" class="client-quicklink">
-            <span class="client-quicklink__icon"><i class="fas fa-file-alt"></i></span>
+        <a href="clientarea.php?action=quotes" class="portal-link">
+            <span class="portal-link__icon"><i class="fas fa-file-alt"></i></span>
             <small>{lang key='quotes'}</small>
             <strong>{$clientsstats.numquotes}</strong>
         </a>
     {/if}
 
-    <a href="supporttickets.php" class="client-quicklink">
-        <span class="client-quicklink__icon"><i class="fas fa-comments"></i></span>
+    <a href="supporttickets.php" class="portal-link">
+        <span class="portal-link__icon"><i class="fas fa-comments"></i></span>
         <small>{lang key='navtickets'}</small>
         <strong>{$clientsstats.numactivetickets}</strong>
     </a>
 
-    <a href="clientarea.php?action=invoices" class="client-quicklink">
-        <span class="client-quicklink__icon"><i class="fas fa-credit-card"></i></span>
+    <a href="clientarea.php?action=invoices" class="portal-link">
+        <span class="portal-link__icon"><i class="fas fa-credit-card"></i></span>
         <small>{lang key='navinvoices'}</small>
         <strong>{$clientsstats.numunpaidinvoices}</strong>
     </a>
