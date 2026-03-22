@@ -972,3 +972,64 @@
     border-color: var(--enterprise-border);
     padding: 0.875rem 1.5rem;
 }
+
+/* Added styles for header and footer */
+
+.enterprise-header .navbar {
+    background: var(--enterprise-dark);
+    padding: 1rem 0;
+}
+
+.enterprise-header .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.enterprise-header .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.enterprise-header .nav-link:hover,
+.enterprise-header .nav-link.active {
+    color: #fff;
+}
+
+.enterprise-header .btn-primary {
+    background: var(--enterprise-primary);
+    border-color: var(--enterprise-primary);
+    font-weight: 600;
+}
+
+.enterprise-footer {
+    background: var(--enterprise-dark);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 4rem 0;
+}
+
+.enterprise-footer h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.enterprise-footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.enterprise-footer a:hover {
+    color: #fff;
+}
+
+.enterprise-footer .list-unstyled li {
+    margin-bottom: 0.75rem;
+}
+
+.enterprise-footer .list-inline-item a {
+    font-size: 1.5rem;
+}
