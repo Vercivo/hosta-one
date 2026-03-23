@@ -4,6 +4,7 @@
     --theme-bg: #f5f7fa;
     --theme-surface: #ffffff;
     --theme-surface-soft: #f0f4f8;
+    --theme-header-max: 1320px;
     --theme-shell-max: none;
     --theme-ink: #101828;
     --theme-text: #344054;
@@ -124,6 +125,12 @@ a:focus {
     position: sticky;
     top: 0;
     z-index: 1035;
+}
+
+#header .topbar > .container,
+#header .navbar > .container,
+.master-breadcrumb > .container {
+    max-width: var(--theme-header-max) !important;
 }
 
 #header .topbar {
