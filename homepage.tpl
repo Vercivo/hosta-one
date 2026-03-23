@@ -44,11 +44,38 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="interactive-animation">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
+                        <div class="hero-visual">
+                            <div class="hero-card hero-card--1">
+                                <div class="hero-card__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                </div>
+                                <div class="hero-card__content">
+                                    <span>Lightning Fast</span>
+                                    <strong>99.9% Uptime</strong>
+                                </div>
+                            </div>
+                            <div class="hero-card hero-card--2">
+                                <div class="hero-card__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <div class="hero-card__content">
+                                    <span>Secure</span>
+                                    <strong>DDoS Protection</strong>
+                                </div>
+                            </div>
+                            <div class="hero-card hero-card--3">
+                                <div class="hero-card__icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                </div>
+                                <div class="hero-card__content">
+                                    <span>24/7</span>
+                                    <strong>Expert Support</strong>
+                                </div>
+                            </div>
+                            <div class="hero-float hero-float--1"></div>
+                            <div class="hero-float hero-float--2"></div>
+                            <div class="hero-float hero-float--3"></div>
+                        </div>
                     </div>
                 </div>
             </div>
