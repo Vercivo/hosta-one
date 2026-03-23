@@ -816,7 +816,8 @@ a:focus {
 }
 
 .minimal-section--soft {
-    background: #fafbfc;
+    background: #ffffff;
+    padding: 5rem 0;
 }
 
 .minimal-heading {
@@ -909,35 +910,48 @@ a:focus {
 
 .minimal-split {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 1.2rem;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: 3rem;
     align-items: start;
 }
 
+.minimal-split__copy {
+    padding-right: 1rem;
+}
+
 .minimal-split__copy h2 {
-    max-width: 13ch;
-    margin: 1rem 0 0.85rem;
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    line-height: 1.02;
+    max-width: 15ch;
+    margin: 1rem 0 1rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+    color: var(--theme-ink);
 }
 
 .minimal-split__copy p {
     margin: 0;
-    color: var(--theme-muted);
-    line-height: 1.85;
+    color: var(--theme-text);
+    font-size: 1.05rem;
+    line-height: 1.8;
 }
 
 .minimal-feature-grid {
     display: grid;
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
 }
 
 .minimal-feature {
-    padding: 1.5rem 1.6rem;
+    padding: 1.75rem 2rem;
     border-radius: var(--theme-radius-lg);
+    background: #fafbfc;
+    border: 1px solid rgba(16, 24, 40, 0.03);
+    box-shadow: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.minimal-feature:hover {
     background: #ffffff;
-    border: 1px solid rgba(16, 24, 40, 0.04);
-    box-shadow: 0 4px 12px rgba(16, 24, 40, 0.03);
+    transform: translateX(4px);
 }
 
 .minimal-feature h3 {
