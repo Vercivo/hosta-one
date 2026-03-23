@@ -14,7 +14,7 @@
 
 <style>
     :root {
-        --hosta-box-max: 1320px;
+        --hosta-box-max: none;
     }
 
     .container,
