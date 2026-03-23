@@ -183,6 +183,36 @@ a:focus {
     color: var(--theme-ink) !important;
 }
 
+#header .navbar-nav i[class^="fa-"],
+#header .navbar-nav i[class*=" fa-"],
+#header .navbar-nav i.fa,
+#header .toolbar i[class^="fa-"],
+#header .toolbar i[class*=" fa-"],
+#header .toolbar i.fa {
+    display: inline-block;
+    width: 1.1em;
+    margin-right: 0.45rem;
+    text-align: center;
+}
+
+#header .navbar-nav i.fal,
+#header .navbar-nav i.fa-light,
+#header .toolbar i.fal,
+#header .toolbar i.fa-light {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+}
+
+#header .navbar-nav i.fad,
+#header .navbar-nav i.fa-duotone,
+#header .toolbar i.fad,
+#header .toolbar i.fa-duotone,
+#header .navbar-nav i.fa:not(.fas):not(.far):not(.fab):not(.fal):not(.fad):not(.fa-solid):not(.fa-regular):not(.fa-brands):not(.fa-light):not(.fa-duotone),
+#header .toolbar i.fa:not(.fas):not(.far):not(.fab):not(.fal):not(.fad):not(.fa-solid):not(.fa-regular):not(.fa-brands):not(.fa-light):not(.fa-duotone) {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
 #main-body {
     padding-top: 1rem;
 }
