@@ -4,7 +4,6 @@
     --theme-bg: #f5f7fa;
     --theme-surface: #ffffff;
     --theme-surface-soft: #f0f4f8;
-    --theme-header-max: 1320px;
     --theme-shell-max: none;
     --theme-ink: #101828;
     --theme-text: #344054;
@@ -127,12 +126,6 @@ a:focus {
     z-index: 1035;
 }
 
-#header .topbar > .container,
-#header .navbar > .container,
-.master-breadcrumb > .container {
-    max-width: var(--theme-header-max) !important;
-}
-
 #header .topbar {
     background: var(--theme-dark);
     color: rgba(255, 255, 255, 0.84);
@@ -166,14 +159,7 @@ a:focus {
     font-weight: 800;
 }
 
-#header .toolbar {
-    display: flex !important;
-    flex-direction: row;
-}
-
 #header .toolbar .cart-btn {
-    display: flex !important;
-    align-items: center;
     background: #fff;
     color: var(--theme-ink);
     border: 1px solid var(--theme-line);
