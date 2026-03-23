@@ -1243,7 +1243,7 @@ a:focus {
 /* Interactive Hero Section */
 .interactive-hero {
     padding: 6rem 0;
-    background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+    background: linear-gradient(180deg, #fafbfc 0%, #ffffff 100%);
 }
 
 .interactive-hero__content h1 {
