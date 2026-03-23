@@ -23,57 +23,33 @@
 <div class="minimal-landing">
     <section class="interactive-hero">
         <div class="container">
-            <div class="interactive-hero__shell">
-                <div class="interactive-hero__content">
-                    <span class="interactive-kicker">Managed Hosting Platform</span>
-                    <h1>Launch websites, billing, and support from one calmer control center.</h1>
-                    <p>
-                        Deliver hosting, domains, invoices, and support through a client experience
-                        that feels modern from the first click instead of crowded from the start.
-                    </p>
-                    <div class="interactive-hero__actions">
-                        <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">View Plans</a>
-                        {if $loggedin}
-                            <a href="{$WEB_ROOT}/clientarea.php" class="btn btn-outline-primary btn-lg">Client Area</a>
-                        {else}
-                            <a href="{$WEB_ROOT}/login.php" class="btn btn-outline-primary btn-lg">Login</a>
-                        {/if}
-                    </div>
-                    <div class="interactive-hero__trust">
-                        <span>99.9% uptime target</span>
-                        <span>Instant provisioning</span>
-                        <span>24/7 ticket support</span>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="interactive-hero__content">
+                        <span class="interactive-kicker">Modern Hosting</span>
+                        <h1>Experience the Future of Web Hosting</h1>
+                        <p>
+                            Our platform is designed to be fast, reliable, and easy to use.
+                            Get started in just a few clicks.
+                        </p>
+                        <div class="interactive-hero__actions">
+                            <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">View Plans</a>
+                            {if $loggedin}
+                                <a href="{$WEB_ROOT}/clientarea.php" class="btn btn-outline-primary btn-lg">Client Area</a>
+                            {else}
+                                <a href="{$WEB_ROOT}/login.php" class="btn btn-outline-primary btn-lg">Login</a>
+                            {/if}
+                        </div>
                     </div>
                 </div>
-                <div class="interactive-hero__visual">
-                    <article class="interactive-card interactive-card--primary">
-                        <span class="interactive-card__eyebrow">Operations Snapshot</span>
-                        <h3>Everything your clients need stays visible without the usual clutter.</h3>
-                        <div class="interactive-card__rows">
-                            <div class="interactive-row">
-                                <strong>Provision</strong>
-                                <span>Launch hosting and domains from a single purchase flow.</span>
-                            </div>
-                            <div class="interactive-row">
-                                <strong>Manage</strong>
-                                <span>Keep services, invoices, renewals, and tickets in one view.</span>
-                            </div>
-                            <div class="interactive-row">
-                                <strong>Scale</strong>
-                                <span>Grow your catalog without making the client area feel heavier.</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="interactive-card">
-                        <span class="interactive-card__eyebrow">Response Time</span>
-                        <strong class="interactive-card__metric">24/7</strong>
-                        <p>Support-first workflows that keep client conversations moving.</p>
-                    </article>
-                    <article class="interactive-card">
-                        <span class="interactive-card__eyebrow">Account Setup</span>
-                        <strong class="interactive-card__metric">1 Click</strong>
-                        <p>Cleaner onboarding for hosting, billing, and domain management.</p>
-                    </article>
+                <div class="col-lg-6">
+                    <div class="interactive-animation">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
                 </div>
             </div>
         </div>
