@@ -170,6 +170,83 @@ a:focus {
     background: var(--theme-brand);
 }
 
+#header .navbar-light > .container,
+#header .main-navbar-wrapper > .container {
+    gap: 1rem;
+}
+
+#header .navbar-light .form-inline.ml-auto {
+    flex: 1 1 24rem;
+    max-width: 28rem;
+    margin-right: 0.25rem;
+}
+
+#header .search {
+    width: 100%;
+    max-width: 100%;
+    min-height: 3.2rem;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid var(--theme-line);
+    border-radius: 999px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    overflow: hidden;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+}
+
+#header .search .input-group-prepend {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+#header .search .btn,
+#header .search .form-control {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+#header .search .btn {
+    padding: 0 0 0 1rem;
+    color: var(--theme-muted);
+    transform: none;
+}
+
+#header .search .btn:hover,
+#header .search .btn:focus {
+    color: var(--theme-ink);
+    background: transparent;
+}
+
+#header .search .btn i {
+    margin-right: 0;
+}
+
+#header .search .form-control {
+    height: 3.2rem;
+    padding: 0.75rem 1.25rem 0.75rem 0.7rem;
+    color: var(--theme-ink);
+    font-size: 0.96rem;
+    font-weight: 600;
+}
+
+#header .search .form-control::placeholder {
+    color: var(--theme-muted);
+    opacity: 1;
+    font-weight: 500;
+}
+
+#header .search .form-control:focus {
+    background: transparent;
+}
+
+#header .search:focus-within {
+    background: #fff;
+    border-color: rgba(37, 99, 235, 0.28);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
 #header .navbar-nav > li > a,
 #header .navbar-nav .nav-link {
     color: var(--theme-muted) !important;
@@ -215,6 +292,16 @@ a:focus {
 
 #main-body {
     padding-top: 1rem;
+}
+
+@media (max-width: 1199.98px) {
+    #header .main-navbar-wrapper .search {
+        margin-bottom: 0.85rem;
+    }
+
+    #header .main-navbar-wrapper .search .form-control {
+        min-width: 0;
+    }
 }
 
 .minimal-landing #main-body {
