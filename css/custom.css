@@ -195,16 +195,16 @@ a:focus {
     text-align: center;
 }
 
+#header .navbar-nav i.far,
+#header .navbar-nav i.fa-regular,
 #header .navbar-nav i.fal,
 #header .navbar-nav i.fa-light,
-#header .toolbar i.fal,
-#header .toolbar i.fa-light {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 400;
-}
-
 #header .navbar-nav i.fad,
 #header .navbar-nav i.fa-duotone,
+#header .toolbar i.far,
+#header .toolbar i.fa-regular,
+#header .toolbar i.fal,
+#header .toolbar i.fa-light,
 #header .toolbar i.fad,
 #header .toolbar i.fa-duotone,
 #header .navbar-nav i.fa:not(.fas):not(.far):not(.fab):not(.fal):not(.fad):not(.fa-solid):not(.fa-regular):not(.fa-brands):not(.fa-light):not(.fa-duotone),
