@@ -144,7 +144,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="minimal-heading text-center">
+                    <div class="minimal-heading minimal-heading--center">
                         <span class="minimal-kicker">Pricing</span>
                         <h2>Find the Perfect Plan for Your Business</h2>
                         <p>

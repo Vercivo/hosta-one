@@ -558,9 +558,29 @@ a:focus {
     background: var(--theme-surface-soft);
 }
 
+.minimal-heading.text-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .pricing-table-section {
     padding: 5rem 0;
     background: var(--theme-surface);
+}
+
+.pricing-table-section .minimal-heading {
+    margin-bottom: 3rem;
+}
+
+.pricing-table-section .minimal-heading .minimal-kicker {
+    margin-bottom: 1rem;
+}
+
+.pricing-table-section .minimal-heading h2 {
+    max-width: 20ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pricing-table-section .row:last-child {
@@ -624,6 +644,15 @@ a:focus {
     font-weight: 500;
 }
 
+.pricing-table__price .price:empty,
+.pricing-table__price .period:empty {
+    display: none;
+}
+
+.pricing-table__price:has(.price:empty) {
+    display: none;
+}
+
 .pricing-table__features {
     flex: 1;
     padding: 0.5rem 0;
@@ -637,20 +666,23 @@ a:focus {
 
 .pricing-table__features li {
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.6rem 0;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 0.75rem 0;
     color: var(--theme-text);
     font-size: 0.95rem;
+    line-height: 1.4;
 }
 
 .pricing-table__features li i {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
-    font-size: 0.7rem;
+    min-width: 18px;
+    width: 18px;
+    height: 18px;
+    font-size: 0.65rem;
+    margin-top: 2px;
     color: var(--theme-brand);
     background: var(--theme-brand-soft);
     border-radius: 50%;
@@ -666,6 +698,12 @@ a:focus {
     padding: 0.85rem 1.5rem;
     font-weight: 600;
     border-radius: var(--theme-radius-md);
+    transition: all 0.2s ease;
+}
+
+.pricing-table__footer .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
 }
 
 /* Highlighted/Recommended plan */
