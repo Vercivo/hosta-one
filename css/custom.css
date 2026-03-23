@@ -159,7 +159,14 @@ a:focus {
     font-weight: 800;
 }
 
+#header .toolbar {
+    display: flex !important;
+    flex-direction: row;
+}
+
 #header .toolbar .cart-btn {
+    display: flex !important;
+    align-items: center;
     background: #fff;
     color: var(--theme-ink);
     border: 1px solid var(--theme-line);
