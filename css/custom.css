@@ -2938,3 +2938,100 @@ body.page-affilliates .master-breadcrumb,
         left: 10%;
     }
 }
+
+/* ========================================
+   REGISTRATION PAGE - DROPDOWN Z-INDEX FIX
+   ======================================== */
+
+/* Fix country code dropdown appearing behind form elements */
+.intl-tel-input,
+.intl-tel-input .country-list,
+.iti,
+.iti .iti__country-list,
+.country-list,
+.dropdown-menu,
+.phone-input-wrapper .dropdown-menu,
+.form-control + .dropdown-menu,
+.input-group .dropdown-menu,
+select.form-control,
+.form-select {
+    position: relative;
+    z-index: 1050 !important;
+}
+
+/* Ensure dropdown menu shows above other form elements */
+.dropdown-menu.show,
+.dropdown-menu[style*="display: block"],
+.dropdown-menu[style*="display:block"] {
+    z-index: 1060 !important;
+}
+
+/* Fix for intl-tel-input plugin */
+.intl-tel-input .country-list {
+    z-index: 1070 !important;
+    position: absolute;
+}
+
+.iti .iti__dropdown-content,
+.iti .iti__country-list {
+    z-index: 1070 !important;
+}
+
+/* Ensure form groups don't clip dropdowns */
+.form-group,
+.input-group,
+.form-floating {
+    position: relative;
+    overflow: visible;
+}
+
+/* Fix for registration form specific */
+.registration-form .form-group,
+#registration .form-group,
+.client-register .form-group,
+.page-register .form-group {
+    overflow: visible;
+    z-index: auto;
+}
+
+/* Ensure dropdown appears above cards and panels */
+.card,
+.panel,
+.panel-default {
+    overflow: visible;
+    z-index: 1;
+}
+
+.card-body,
+.panel-body {
+    overflow: visible;
+    z-index: 1;
+}
+
+/* Fix for WHMCS registration form */
+#registrationForm .form-group,
+#registrationForm .input-group {
+    position: relative;
+    z-index: auto;
+}
+
+/* Ensure select dropdowns work */
+select.form-control:focus,
+.form-select:focus {
+    z-index: 10;
+}
+
+/* Mobile fixes for dropdowns */
+@media (max-width: 767.98px) {
+    .intl-tel-input .country-list,
+    .iti .iti__country-list,
+    .dropdown-menu {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        max-height: 80vh;
+        width: 90vw;
+        z-index: 9999 !important;
+    }
+}
