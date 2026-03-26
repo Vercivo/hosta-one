@@ -554,8 +554,46 @@ a:focus {
 }
 
 .icon-grid {
-    padding: 4rem 0;
+    padding: 3rem 0;
     background: #fafbfc;
+}
+
+.icon-grid .container {
+    padding-left: clamp(16px, 3vw, 40px);
+    padding-right: clamp(16px, 3vw, 40px);
+}
+
+.icon-grid .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+.icon-grid .row > [class*="col-"] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0;
+}
+
+.icon-grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: var(--theme-radius-lg);
+    background: transparent;
+    border: 1px solid rgba(16, 24, 40, 0.04);
+    box-shadow: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.icon-grid__item:hover {
+    transform: none;
+    background: #ffffff;
+    border-color: rgba(16, 24, 40, 0.08);
+    box-shadow: 0 4px 16px rgba(16, 24, 40, 0.04);
 }
 
 .minimal-heading.text-center {
@@ -565,26 +603,53 @@ a:focus {
 }
 
 .pricing-table-section {
-    padding: 5rem 0;
+    padding: 4rem 0;
     background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
 }
 
 .pricing-table-section .minimal-heading {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .pricing-table-section .minimal-heading .minimal-kicker {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .pricing-table-section .minimal-heading h2 {
-    max-width: 20ch;
+    max-width: 24ch;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.pricing-table-section .minimal-heading p {
+    max-width: 50ch;
     margin-left: auto;
     margin-right: auto;
 }
 
 .pricing-table-section .row:last-child {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
+}
+
+.pricing-table-section .row > [class*="col-"] {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1199.98px) {
+    .pricing-table-section .row > [class*="col-"] {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pricing-table-section {
+        padding: 3rem 0;
+    }
+    
+    .pricing-table-section .minimal-heading {
+        margin-bottom: 2rem;
+    }
 }
 
 .pricing-table {
@@ -779,16 +844,16 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 56px;
-    font-size: 2.5rem;
+    height: 40px;
+    font-size: 1.75rem;
     color: var(--theme-ink);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .icon-grid__icon svg {
     display: block;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
     stroke: currentColor;
     fill: none;
     stroke-width: 1.8;
@@ -799,16 +864,19 @@ a:focus {
 .icon-grid__item h5 {
     display: flex;
     align-items: center;
-    min-height: 56px;
-    margin-bottom: 0.85rem;
+    min-height: 40px;
+    margin-bottom: 0.5rem;
     text-align: center;
     font-weight: 700;
+    font-size: 1rem;
 }
 
 .icon-grid__item p {
-    max-width: 18ch;
+    max-width: 22ch;
     margin: 0 auto;
     line-height: 1.5;
+    font-size: 0.875rem;
+    color: var(--theme-muted);
 }
 
 .minimal-section {
@@ -987,7 +1055,19 @@ a:focus {
 .minimal-support-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.5rem;
+    gap: 1.25rem;
+}
+
+@media (max-width: 1199.98px) {
+    .minimal-support-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575.98px) {
+    .minimal-support-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .minimal-support {
