@@ -155,8 +155,18 @@ a:focus {
 }
 
 #header .navbar-brand {
-    font-size: 1.24rem;
+    font-size: 1.5rem;
     font-weight: 800;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, var(--theme-ink) 0%, var(--theme-brand) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: opacity 0.2s ease;
+}
+
+#header .navbar-brand:hover {
+    opacity: 0.8;
 }
 
 #header {
@@ -301,8 +311,28 @@ a:focus {
 
 #header .navbar-nav > li > a,
 #header .navbar-nav .nav-link {
+    position: relative;
     color: var(--theme-muted) !important;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: -0.01em;
+    padding: 0.5rem 1rem !important;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+#header .navbar-nav > li > a::before,
+#header .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background: var(--theme-brand);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
 }
 
 #header .navbar-nav > li > a:hover,
@@ -310,6 +340,25 @@ a:focus {
 #header .navbar-nav .nav-link:hover,
 #header .navbar-nav .nav-link:focus {
     color: var(--theme-ink) !important;
+    background: rgba(16, 24, 40, 0.04);
+}
+
+#header .navbar-nav > li > a:hover::before,
+#header .navbar-nav .nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+#header .navbar-nav > li.active > a,
+#header .navbar-nav > li.show > a,
+#header .navbar-nav .nav-link.active {
+    color: var(--theme-ink) !important;
+    background: rgba(37, 99, 235, 0.08);
+    font-weight: 700;
+}
+
+#header .navbar-nav > li.active > a::before,
+#header .navbar-nav .nav-link.active::before {
+    transform: scaleX(1);
 }
 
 #header .navbar-nav i[class^="fa-"],
