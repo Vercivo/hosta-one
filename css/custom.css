@@ -417,118 +417,66 @@ a:focus {
 }
 
 /* ========================================
-   BREADCRUMB STYLES - Consistent Across All Pages
+   BREADCRUMB STYLES - HIDE ON ALL PAGES
    ======================================== */
 
-/* Ensure breadcrumbs are visible by default */
-.master-breadcrumb {
-    display: block !important;
-    background: linear-gradient(135deg, rgba(248, 250, 252, 0.95) 0%, rgba(255, 255, 255, 0.98) 100%);
-    border-bottom: 1px solid rgba(16, 24, 40, 0.08);
-    padding: 0.75rem 0;
-    position: relative;
-    z-index: 10;
-}
-
-/* Hide breadcrumbs on homepage only */
+/* Hide breadcrumbs on ALL pages including homepage */
+.master-breadcrumb,
+body .master-breadcrumb,
 body.home .master-breadcrumb,
 .page-home .master-breadcrumb,
 .home-page .master-breadcrumb,
 .template-homepage .master-breadcrumb,
-.minimal-landing + .master-breadcrumb,
-.minimal-landing ~ .master-breadcrumb {
-    display: none !important;
-}
-
-/* ========================================
-   ENSURE BREADCRUMBS SHOW ON ALL PAGES
-   ======================================== */
-
-/* Force breadcrumbs to show on login page */
 body.login .master-breadcrumb,
 body.page-login .master-breadcrumb,
 .template-login .master-breadcrumb,
-.page-login .master-breadcrumb {
-    display: block !important;
-}
-
-/* Ensure breadcrumbs show on client area pages */
+.page-login .master-breadcrumb,
 body.clientarea .master-breadcrumb,
 body.page-clientarea .master-breadcrumb,
 .template-clientarea .master-breadcrumb,
 .page-clientarea .master-breadcrumb,
-.viewclient .master-breadcrumb {
-    display: block !important;
-}
-
-/* Ensure breadcrumbs show on cart pages */
+.viewclient .master-breadcrumb,
 body.viewcart .master-breadcrumb,
 body.page-viewcart .master-breadcrumb,
 .template-viewcart .master-breadcrumb,
 .page-viewcart .master-breadcrumb,
-body.cart .master-breadcrumb {
-    display: block !important;
-}
-
-/* Ensure breadcrumbs show on support pages */
+body.cart .master-breadcrumb,
 body.support .master-breadcrumb,
 body.page-support .master-breadcrumb,
 .template-support .master-breadcrumb,
-.page-support .master-breadcrumb {
-    display: block !important;
-}
-
-/* Ensure breadcrumbs show on knowledgebase pages */
+.page-support .master-breadcrumb,
 body.knowledgebase .master-breadcrumb,
 body.page-knowledgebase .master-breadcrumb,
 .template-knowledgebase .master-breadcrumb,
-.page-knowledgebase .master-breadcrumb {
-    display: block !important;
-}
-
-/* Ensure breadcrumbs show on announcement pages */
+.page-knowledgebase .master-breadcrumb,
 body.announcement .master-breadcrumb,
 body.page-announcement .master-breadcrumb,
 .template-announcement .master-breadcrumb,
-.page-announcement .master-breadcrumb {
-    display: block !important;
-}
-
-/* Ensure breadcrumbs show on contact pages */
+.page-announcement .master-breadcrumb,
 body.contact .master-breadcrumb,
 body.page-contact .master-breadcrumb,
 .template-contact .master-breadcrumb,
-.page-contact .master-breadcrumb {
-    display: block !important;
-}
-
-/* Ensure breadcrumbs show on domain pages */
+.page-contact .master-breadcrumb,
 body.domain .master-breadcrumb,
 body.page-domain .master-breadcrumb,
 .template-domain .master-breadcrumb,
-.page-domain .master-breadcrumb {
-    display: block !important;
-}
-
-/* Ensure breadcrumbs show on server status pages */
+.page-domain .master-breadcrumb,
 body.serverstatus .master-breadcrumb,
 body.page-serverstatus .master-breadcrumb,
 .template-serverstatus .master-breadcrumb,
-.page-serverstatus .master-breadcrumb {
-    display: block !important;
-}
-
-/* Ensure breadcrumbs show on affilliates pages */
+.page-serverstatus .master-breadcrumb,
 body.affilliates .master-breadcrumb,
 body.page-affilliates .master-breadcrumb,
 .template-affilliates .master-breadcrumb,
 .page-affilliates .master-breadcrumb {
-    display: block !important;
+    display: none !important;
 }
 
-/* General fallback - ensure breadcrumbs show on all pages except homepage */
-body:not(.home):not(.page-home):not(.home-page):not(.template-homepage) .master-breadcrumb {
-    display: block !important;
+/* Ensure minimal-landing pages don't show breadcrumbs */
+.minimal-landing .master-breadcrumb,
+.minimal-landing + .master-breadcrumb,
+.minimal-landing ~ .master-breadcrumb {
+    display: none !important;
 }
 
 .master-breadcrumb .container {
