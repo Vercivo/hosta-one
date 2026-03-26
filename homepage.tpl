@@ -26,7 +26,6 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="interactive-hero__content">
-                        <span class="interactive-kicker">Modern Hosting Platform</span>
                         <h1>Experience the <span>Future</span> of Web Hosting</h1>
                         <p>
                             Enterprise-grade infrastructure with 99.99% uptime guarantee. 
