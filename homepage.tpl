@@ -96,6 +96,11 @@
 
     <section class="icon-grid">
         <div class="container">
+            <div class="icon-grid__header">
+                <span class="icon-grid__kicker">Why Choose Us</span>
+                <h2>Everything you need to succeed</h2>
+                <p>Powerful features designed to help you build, launch, and grow your online presence.</p>
+            </div>
             <div class="row">
                 <div class="col-lg-3">
                     <div class="icon-grid__item">
@@ -104,8 +109,8 @@
                                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                             </svg>
                         </div>
-                        <h5>Fast Setup</h5>
-                        <p>Start quickly with cleaner onboarding.</p>
+                        <h5>Lightning Fast</h5>
+                        <p>SSD-powered servers with global CDN for blazing fast performance.</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -118,8 +123,8 @@
                                 <rect x="3" y="14" width="7" height="7"></rect>
                             </svg>
                         </div>
-                        <h5>Unified Management</h5>
-                        <p>Keep services and billing in one view.</p>
+                        <h5>Scalable Infrastructure</h5>
+                        <p>Easily scale resources up or down as your business grows.</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -132,8 +137,8 @@
                                 <circle cx="11" cy="11" r="2"></circle>
                             </svg>
                         </div>
-                        <h5>Professional Look</h5>
-                        <p>Modern and minimal instead of crowded.</p>
+                        <h5>Enterprise Security</h5>
+                        <p>Advanced DDoS protection, SSL certificates, and daily backups.</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -143,8 +148,8 @@
                                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                             </svg>
                         </div>
-                        <h5>Support Ready</h5>
-                        <p>Key help paths stay visible and simple.</p>
+                        <h5>24/7 Expert Support</h5>
+                        <p>Our technical team is always available to help you succeed.</p>
                     </div>
                 </div>
             </div>
