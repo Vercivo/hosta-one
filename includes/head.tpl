@@ -49,6 +49,29 @@
         whmcsBaseUrl = "{\WHMCS\Utility\Environment\WebHelper::getBaseUrl()}";
     {if $captcha}{$captcha->getPageJs()}{/if}
 </script>
+
+<!-- Fix logo link to point to homepage without /index -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Find logo link and fix it
+    var logoLink = document.querySelector('.navbar-brand, .logo a, a.navbar-brand, header .brand, .header-logo a');
+    if (logoLink) {
+        var currentHref = logoLink.getAttribute('href') || '';
+        // If link ends with /index or /index.php, change to just /
+        if (currentHref.match(/\/index(\.php)?$/i)) {
+            logoLink.setAttribute('href', '/');
+        }
+    }
+    
+    // Also fix any links with /index in them
+    document.querySelectorAll('a[href*="/index"]').forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href && href.match(/\/index(\.php)?$/i)) {
+            link.setAttribute('href', '/');
+        }
+    });
+});
+</script>
 <script src="{assetPath file='scripts.min.js'}?v={$versionHash}"></script>
 
 {if $templatefile == "viewticket" && !$loggedin}
