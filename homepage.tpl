@@ -252,6 +252,107 @@
     </section>
 {/if}
 
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testimonials-header">
+                <span class="testimonials-kicker">Testimonials</span>
+                <h2>Trusted by thousands of businesses worldwide</h2>
+                <p>See what our customers have to say about their experience with our platform.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "We've reduced our server downtime by 99% since switching. The support team is incredibly responsive and knowledgeable."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <span>SC</span>
+                        </div>
+                        <div class="testimonial-info">
+                            <strong>Sarah Chen</strong>
+                            <span>CTO at TechCorp</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card testimonial-card--featured">
+                    <div class="testimonial-badge">
+                        <i class="fas fa-check-circle"></i>
+                        Verified Customer
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "The migration was seamless and our website performance improved immediately. I wish we had made the switch sooner."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <span>MJ</span>
+                        </div>
+                        <div class="testimonial-info">
+                            <strong>Michael Johnson</strong>
+                            <span>Founder at StartupXYZ</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "Outstanding uptime and the customer support team goes above and beyond. Best hosting experience we've had."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <span>ER</span>
+                        </div>
+                        <div class="testimonial-info">
+                            <strong>Emily Rodriguez</strong>
+                            <span>Director at CloudScale</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="testimonials-stats">
+                <div class="testimonials-stat">
+                    <strong>10,000+</strong>
+                    <span>Active Customers</span>
+                </div>
+                <div class="testimonials-stat">
+                    <strong>4.9/5</strong>
+                    <span>Average Rating</span>
+                </div>
+                <div class="testimonials-stat">
+                    <strong>99.99%</strong>
+                    <span>Uptime SLA</span>
+                </div>
+                <div class="testimonials-stat">
+                    <strong>24/7</strong>
+                    <span>Expert Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="minimal-section minimal-section--soft">
         <div class="container">
             <div class="minimal-split">
