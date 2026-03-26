@@ -282,13 +282,13 @@
         </div>
     </section>
 
-    <section class="minimal-section">
-        <div class="minimal-wrap">
+    <section class="minimal-support-section">
+        <div class="container">
             <div class="minimal-heading minimal-heading--center">
                 <span class="minimal-kicker">Support</span>
-                <h2>Help stays close without overcrowding the page.</h2>
+                <h2>We're here to help you succeed</h2>
                 <p>
-                    Important support destinations remain visible while the overall experience stays clean and minimal.
+                    Get the help you need, when you need it. Our comprehensive support resources ensure you're never alone.
                 </p>
             </div>
 
@@ -296,22 +296,22 @@
                 <a href="{routePath('announcement-index')}" class="minimal-support">
                     <span class="minimal-support__icon"><i class="fas fa-bullhorn"></i></span>
                     <strong>{lang key='announcementstitle'}</strong>
-                    <p>Platform updates and important notices.</p>
+                    <p>Stay informed with the latest platform updates, news, and important announcements.</p>
                 </a>
                 <a href="serverstatus.php" class="minimal-support">
                     <span class="minimal-support__icon"><i class="fas fa-server"></i></span>
                     <strong>{lang key='networkstatustitle'}</strong>
-                    <p>Status visibility for hosted services.</p>
+                    <p>Real-time visibility into system status, uptime, and performance across all services.</p>
                 </a>
                 <a href="{routePath('knowledgebase-index')}" class="minimal-support">
                     <span class="minimal-support__icon"><i class="fas fa-book"></i></span>
                     <strong>{lang key='knowledgebasetitle'}</strong>
-                    <p>Self-service guidance for common questions.</p>
+                    <p>Comprehensive guides, tutorials, and answers to help you get the most from our platform.</p>
                 </a>
                 <a href="submitticket.php" class="minimal-support">
                     <span class="minimal-support__icon"><i class="fas fa-life-ring"></i></span>
                     <strong>{lang key='homepage.submitTicket'}</strong>
-                    <p>Direct route into account and technical support.</p>
+                    <p>Our expert support team is ready to assist you with any questions or technical issues.</p>
                 </a>
             </div>
         </div>
