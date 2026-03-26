@@ -249,103 +249,47 @@
     </section>
 {/if}
 
-    <section class="testimonials-section">
+    <section class="our-promise-section">
         <div class="container">
-            <div class="testimonials-header">
-                <span class="testimonials-kicker">Testimonials</span>
-                <h2>Trusted by thousands of businesses worldwide</h2>
-                <p>See what our customers have to say about their experience with our platform.</p>
+            <div class="our-promise-header">
+                <span class="our-promise-kicker">Our Commitment</span>
+                <h2>Building Trust, One Customer at a Time</h2>
+                <p>We're a new hosting provider with a clear mission: earn your trust through exceptional service, transparency, and unwavering support. Your success is our priority.</p>
             </div>
             
-            <div class="testimonials-grid">
-                <article class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="our-promise-grid">
+                <article class="promise-card">
+                    <div class="promise-icon">
+                        <i class="fas fa-heart"></i>
                     </div>
-                    <blockquote class="testimonial-quote">
-                        "We've reduced our server downtime by 99% since switching. The support team is incredibly responsive and knowledgeable."
-                    </blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">
-                            <span>SC</span>
-                        </div>
-                        <div class="testimonial-info">
-                            <strong>Sarah Chen</strong>
-                            <span>CTO at TechCorp</span>
-                        </div>
-                    </div>
+                    <h3>Personalized Attention</h3>
+                    <p>As a new business, every customer matters to us. You'll receive dedicated support and personalized solutions tailored to your specific needs.</p>
                 </article>
 
-                <article class="testimonial-card testimonial-card--featured">
-                    <div class="testimonial-badge">
-                        <i class="fas fa-check-circle"></i>
-                        Verified Customer
+                <article class="promise-card promise-card--featured">
+                    <div class="promise-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        Our Guarantee
                     </div>
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="promise-icon">
+                        <i class="fas fa-handshake"></i>
                     </div>
-                    <blockquote class="testimonial-quote">
-                        "The migration was seamless and our website performance improved immediately. I wish we had made the switch sooner."
-                    </blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">
-                            <span>MJ</span>
-                        </div>
-                        <div class="testimonial-info">
-                            <strong>Michael Johnson</strong>
-                            <span>Founder at StartupXYZ</span>
-                        </div>
-                    </div>
+                    <h3>Honest & Transparent</h3>
+                    <p>We believe in complete transparency. No hidden fees, no false promises. Just reliable hosting with clear, upfront communication every step of the way.</p>
                 </article>
 
-                <article class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <article class="promise-card">
+                    <div class="promise-icon">
+                        <i class="fas fa-rocket"></i>
                     </div>
-                    <blockquote class="testimonial-quote">
-                        "Outstanding uptime and the customer support team goes above and beyond. Best hosting experience we've had."
-                    </blockquote>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">
-                            <span>ER</span>
-                        </div>
-                        <div class="testimonial-info">
-                            <strong>Emily Rodriguez</strong>
-                            <span>Director at CloudScale</span>
-                        </div>
-                    </div>
+                    <h3>Growth-Focused</h3>
+                    <p>We're building this business for the long term. Our infrastructure and services are designed to grow alongside your business, supporting your success at every stage.</p>
                 </article>
             </div>
             
-            <div class="testimonials-stats">
-                <div class="testimonials-stat">
-                    <strong>10,000+</strong>
-                    <span>Active Customers</span>
-                </div>
-                <div class="testimonials-stat">
-                    <strong>4.9/5</strong>
-                    <span>Average Rating</span>
-                </div>
-                <div class="testimonials-stat">
-                    <strong>99.99%</strong>
-                    <span>Uptime SLA</span>
-                </div>
-                <div class="testimonials-stat">
-                    <strong>24/7</strong>
-                    <span>Expert Support</span>
-                </div>
+            <div class="our-promise-cta">
+                <p>Be among our first customers and help shape the future of hosting.</p>
+                <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">Join Us Today</a>
             </div>
         </div>
     </section>

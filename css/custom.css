@@ -1843,6 +1843,216 @@ a:focus {
     font-weight: 500;
 }
 
+/* Our Promise Section - Honest Alternative to Testimonials */
+.our-promise-section {
+    padding: 8rem 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.our-promise-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(ellipse at 80% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 80%, rgba(16, 24, 40, 0.03) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.our-promise-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.our-promise-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.our-promise-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--theme-brand);
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(37, 99, 235, 0.08);
+    border-radius: 999px;
+}
+
+.our-promise-kicker::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--theme-brand);
+    border-radius: 50%;
+}
+
+.our-promise-header h2 {
+    max-width: 25ch;
+    margin: 0 auto 1rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--theme-ink);
+}
+
+.our-promise-header p {
+    max-width: 60ch;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    color: var(--theme-muted);
+    line-height: 1.7;
+}
+
+.our-promise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 1199.98px) {
+    .our-promise-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767.98px) {
+    .our-promise-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.promise-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    border-radius: var(--theme-radius-xl);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(16, 24, 40, 0.06);
+    box-shadow: 0 4px 24px rgba(16, 24, 40, 0.04);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(12px);
+    position: relative;
+    overflow: hidden;
+}
+
+.promise-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.promise-card:hover {
+    transform: translateY(-8px);
+    background: #ffffff;
+    border-color: rgba(37, 99, 235, 0.12);
+    box-shadow: 0 20px 40px rgba(16, 24, 40, 0.1);
+}
+
+.promise-card:hover::before {
+    opacity: 1;
+}
+
+.promise-card--featured {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    border-color: var(--theme-brand);
+    box-shadow: 0 0 0 1px var(--theme-brand), 0 8px 30px rgba(37, 99, 235, 0.12);
+}
+
+.promise-card--featured::before {
+    opacity: 1;
+}
+
+.promise-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--theme-brand);
+    margin-bottom: 1rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(37, 99, 99, 0.08);
+    border-radius: 999px;
+}
+
+.promise-badge i {
+    font-size: 0.875rem;
+}
+
+.promise-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.5rem;
+    border-radius: var(--theme-radius-lg);
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(37, 99, 235, 0.05) 100%);
+    color: var(--theme-brand);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.promise-card:hover .promise-icon {
+    background: linear-gradient(135deg, var(--theme-brand) 0%, #1d4ed8 100%);
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.promise-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--theme-ink);
+    letter-spacing: -0.02em;
+}
+
+.promise-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--theme-muted);
+    margin: 0;
+}
+
+.our-promise-cta {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(37, 99, 235, 0.02) 100%);
+    border-radius: var(--theme-radius-xl);
+    border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.our-promise-cta p {
+    font-size: 1.125rem;
+    color: var(--theme-text);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.our-promise-cta .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
 .minimal-cta {
     padding: 6rem 0;
     background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
