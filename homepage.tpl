@@ -253,29 +253,29 @@
 {/if}
 
     <section class="minimal-section minimal-section--soft">
-        <div class="minimal-wrap">
+        <div class="container">
             <div class="minimal-split">
                 <div class="minimal-split__copy">
-                    <span class="minimal-kicker">Why It Works</span>
-                    <h2>A lighter interface makes the whole theme feel more modern.</h2>
+                    <span class="minimal-kicker">Why Choose Us</span>
+                    <h2>Designed for modern businesses that demand excellence.</h2>
                     <p>
-                        This direction removes extra noise and gives the theme stronger whitespace, cleaner card
-                        structure, and a more polished rhythm across the homepage and client area.
+                        Our platform combines enterprise-grade infrastructure with an intuitive interface, 
+                        delivering the performance, security, and reliability your business deserves.
                     </p>
                 </div>
 
                 <div class="minimal-feature-grid">
                     <article class="minimal-feature">
-                        <h3>More space</h3>
-                        <p>Wide layouts and quieter surfaces make the page feel more premium.</p>
+                        <h3>Premium Experience</h3>
+                        <p>Clean, modern design with intuitive navigation that makes managing your services effortless.</p>
                     </article>
                     <article class="minimal-feature">
-                        <h3>Less noise</h3>
-                        <p>Fewer decorative treatments keep attention on content and actions.</p>
+                        <h3>Enterprise Security</h3>
+                        <p>Advanced protection with DDoS mitigation, SSL certificates, and continuous monitoring.</p>
                     </article>
                     <article class="minimal-feature">
-                        <h3>Better clarity</h3>
-                        <p>Visitors can reach products, support, and login paths faster.</p>
+                        <h3>24/7 Expert Support</h3>
+                        <p>Our technical team is always available to help you resolve any issues quickly.</p>
                     </article>
                 </div>
             </div>
