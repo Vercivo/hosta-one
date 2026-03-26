@@ -3021,8 +3021,84 @@ select.form-control:focus,
     z-index: 10;
 }
 
-/* Mobile fixes for dropdowns */
+/* Billing Address Form - Dropdown Fix */
+.billing-address-form .form-group,
+#billingAddress .form-group,
+.billing-details .form-group,
+.billing-section .form-group,
+.billing-form .form-group,
+.billing-address .form-group,
+.form-section-billing .form-group,
+.billing-container .form-group,
+#billing-details-form .form-group,
+.billing-info .form-group {
+    position: relative !important;
+    overflow: visible !important;
+    z-index: auto !important;
+}
+
+.billing-address-form .intl-tel-input,
+.billing-address-form .iti,
+#billingAddress .intl-tel-input,
+#billingAddress .iti,
+.billing-details .intl-tel-input,
+.billing-details .iti,
+.billing-form .intl-tel-input,
+.billing-form .iti {
+    position: relative !important;
+    z-index: 2000 !important;
+}
+
+.billing-address-form .country-list,
+.billing-address-form .iti__country-list,
+#billingAddress .country-list,
+#billingAddress .iti__country-list,
+.billing-details .country-list,
+.billing-details .iti__country-list {
+    z-index: 3000 !important;
+    position: absolute !important;
+}
+
+/* Ensure billing dropdowns appear above everything */
+.billing-address-form select,
+.billing-address-form .dropdown-menu,
+.billing-address-form .country-list,
+#billingAddress select,
+#billingAddress .dropdown-menu,
+#billingAddress .country-list {
+    z-index: 4000 !important;
+    position: relative;
+}
+
+/* Fix for form cards containing billing sections */
+.card:has(.billing-address-form),
+.card:has(#billingAddress),
+.card:has(.billing-details),
+.panel:has(.billing-address-form),
+.panel:has(#billingAddress) {
+    overflow: visible !important;
+    z-index: auto !important;
+}
+
+/* Ensure billing section containers don't clip */
+.billing-address-form,
+#billingAddress,
+.billing-details,
+.billing-section,
+.billing-form {
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Mobile fixes for billing dropdowns */
 @media (max-width: 767.98px) {
+    .billing-address-form .country-list,
+    .billing-address-form .iti__country-list,
+    #billingAddress .country-list,
+    #billingAddress .iti__country-list,
+    .billing-details .country-list,
+    .billing-details .iti__country-list,
     .intl-tel-input .country-list,
     .iti .iti__country-list,
     .dropdown-menu {
