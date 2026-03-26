@@ -318,15 +318,15 @@
     </section>
 
     <section class="minimal-cta">
-        <div class="minimal-wrap">
+        <div class="container">
             <div class="minimal-cta__box">
                 <div>
-                    <span class="minimal-kicker minimal-kicker--dark">Get Started</span>
-                    <h2>Launch with a cleaner front end and a smoother customer flow.</h2>
+                    <span class="minimal-kicker">Get Started Today</span>
+                    <h2>Ready to transform your hosting experience?</h2>
                 </div>
                 <div class="minimal-cta__actions">
-                    <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">Start With Hosting</a>
-                    <a href="contact.php" class="btn btn-outline-primary btn-lg">Talk To Sales</a>
+                    <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">Start Your Journey</a>
+                    <a href="contact.php" class="btn btn-outline-primary btn-lg">Contact Sales</a>
                 </div>
             </div>
         </div>
