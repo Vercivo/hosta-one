@@ -26,19 +26,32 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="interactive-hero__content">
-                        <span class="interactive-kicker">Modern Hosting</span>
-                        <h1>Experience the Future of Web Hosting</h1>
+                        <span class="interactive-kicker">Modern Hosting Platform</span>
+                        <h1>Experience the <span>Future</span> of Web Hosting</h1>
                         <p>
-                            Our platform is designed to be fast, reliable, and easy to use.
-                            Get started in just a few clicks.
+                            Enterprise-grade infrastructure with 99.99% uptime guarantee. 
+                            Deploy in seconds with our intuitive platform designed for scale.
                         </p>
                         <div class="interactive-hero__actions">
-                            <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">View Plans</a>
+                            <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">Get Started</a>
                             {if $loggedin}
-                                <a href="{$WEB_ROOT}/clientarea.php" class="btn btn-outline-primary btn-lg">Client Area</a>
+                                <a href="{$WEB_ROOT}/clientarea.php" class="btn btn-outline-primary btn-lg">Dashboard</a>
                             {else}
-                                <a href="{$WEB_ROOT}/login.php" class="btn btn-outline-primary btn-lg">Login</a>
+                                <a href="{$WEB_ROOT}/login.php" class="btn btn-outline-primary btn-lg">Sign In</a>
                             {/if}
+                        </div>
+                        <div class="interactive-hero__trust">
+                            <span class="interactive-hero__trust-label">Trusted by 10,000+ businesses</span>
+                            <div class="interactive-hero__trust-badges">
+                                <div class="interactive-hero__trust-badge">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="interactive-hero__trust-badge">4.9/5 Rating</span>
+                            </div>
                         </div>
                     </div>
                 </div>
