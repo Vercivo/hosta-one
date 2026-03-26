@@ -28,8 +28,8 @@
                     <div class="interactive-hero__content">
                         <h1>Experience the <span>Future</span> of Web Hosting</h1>
                         <p>
-                            Enterprise-grade infrastructure with 99.99% uptime guarantee. 
-                            Deploy in seconds with our intuitive platform designed for scale.
+                            Modern hosting infrastructure built for reliability and performance. 
+                            We're a new hosting provider committed to earning your trust through exceptional service.
                         </p>
                         <div class="interactive-hero__actions">
                             <a href="{$WEB_ROOT}/cart.php" class="btn btn-primary btn-lg">Get Started</a>
@@ -40,16 +40,13 @@
                             {/if}
                         </div>
                         <div class="interactive-hero__trust">
-                            <span class="interactive-hero__trust-label">Trusted by 10,000+ businesses</span>
+                            <span class="interactive-hero__trust-label">Ready to Serve Your Business</span>
                             <div class="interactive-hero__trust-badges">
                                 <div class="interactive-hero__trust-badge">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-shield-alt"></i>
+                                    Secure Infrastructure
                                 </div>
-                                <span class="interactive-hero__trust-badge">4.9/5 Rating</span>
+                                <span class="interactive-hero__trust-badge">Enterprise-Grade</span>
                             </div>
                         </div>
                     </div>
