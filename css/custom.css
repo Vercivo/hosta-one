@@ -1008,10 +1008,13 @@ body.page-affilliates .master-breadcrumb,
 
 .pricing-table-section .row:last-child {
     margin-top: 0;
+    display: flex;
+    align-items: stretch;
 }
 
 .pricing-table-section .row > [class*="col-"] {
     margin-bottom: 2rem;
+    display: flex;
 }
 
 @media (max-width: 1199.98px) {
