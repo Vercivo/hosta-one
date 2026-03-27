@@ -176,10 +176,9 @@
                                 <h3>{$productGroup.name}</h3>
                                 <p>{$productGroup.tagline}</p>
                             </div>
-                            {* Product groups don't have prices - only individual products do *}
-                            {* Show a call-to-action instead of price *}
-                            <div class="pricing-table__price">
-                                <span class="price" style="font-size: 1.25rem; font-weight: 600;">View Plans</span>
+                            {* Product groups don't have prices - hide price section *}
+                            <div class="pricing-table__price" style="display: none;">
+                                <span class="price"></span>
                                 <span class="period"></span>
                             </div>
                             <div class="pricing-table__features">
