@@ -1116,7 +1116,9 @@ body.page-affilliates .master-breadcrumb,
 }
 
 .pricing-table__price:has(.price:empty) {
-    display: none;
+    visibility: hidden;
+    padding: 1rem 0 1.5rem;
+    min-height: calc(3.5rem + 2.5rem);
 }
 
 .pricing-table__features {

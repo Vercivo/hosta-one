@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+node_modules/
+.env
+.env.local
+package-lock.json
+yarn.lock
+dist/
+build/
+hosta-theme.rar
