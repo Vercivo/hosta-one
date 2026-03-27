@@ -1,3 +1,80 @@
+<!-- Schema.org Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Web Hosting Services",
+  "url": "{$systemurl}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{$systemurl}knowledgebase.php?action=search&query={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Web Hosting Company",
+  "url": "{$systemurl}",
+  "logo": "{$systemurl}assets/img/logo.png",
+  "sameAs": [
+    "https://facebook.com/yourpage",
+    "https://twitter.com/yourhandle",
+    "https://linkedin.com/company/yourcompany"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-800-XXX-XXXX",
+    "contactType": "customer service",
+    "availableLanguage": ["English"],
+    "areaServed": "US"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Web Hosting",
+  "provider": {
+    "@type": "Organization",
+    "name": "Web Hosting Company"
+  },
+  "areaServed": "Worldwide",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Web Hosting Plans",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Shared Hosting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VPS Hosting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dedicated Servers"
+        }
+      }
+    ]
+  }
+}
+</script>
+
 <style>
     .master-breadcrumb,
     .home-domain-search,
