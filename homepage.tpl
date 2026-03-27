@@ -170,57 +170,29 @@
             </div>
             <div class="row">
                 {foreach $productGroups as $productGroup}
-                    {* Get first product in group for pricing *}
-                    {assign var=groupProducts value=$productGroup->getProducts()}
-                    {assign var=firstProduct value=$groupProducts[0]}
-                    
                     <div class="col-lg-4">
                         <div class="pricing-table">
                             <div class="pricing-table__header">
                                 <h3>{$productGroup.name}</h3>
                                 <p>{$productGroup.tagline}</p>
                             </div>
-                            {if $firstProduct}
-                                {* Show pricing from first product *}
-                                <div class="pricing-table__price">
-                                    <span class="price">{$firstProduct->getPricing()->getStartingPrice()}</span>
-                                    <span class="period">/mo</span>
-                                </div>
-                                <div class="pricing-table__features">
-                                    <ul>
-                                        {* Show real features from product *}
-                                        {foreach $firstProduct->getFeatures() as $feature}
-                                            <li><i class="fas fa-check"></i> {$feature}</li>
-                                        {foreachelse}
-                                            {* Fallback if no features defined *}
-                                            <li><i class="fas fa-check"></i> Reliable Hosting</li>
-                                            <li><i class="fas fa-check"></i> 24/7 Support</li>
-                                            <li><i class="fas fa-check"></i> Free SSL Certificate</li>
-                                            <li><i class="fas fa-check"></i> Daily Backups</li>
-                                        {/foreach}
-                                    </ul>
-                                </div>
-                                <div class="pricing-table__footer">
-                                    <a href="{$firstProduct->getRoutePath()}" class="btn btn-primary">Get Started</a>
-                                </div>
-                            {else}
-                                {* No products in group - show simplified view *}
-                                <div class="pricing-table__price">
-                                    <span class="price">View Plans</span>
-                                    <span class="period"></span>
-                                </div>
-                                <div class="pricing-table__features">
-                                    <ul>
-                                        <li><i class="fas fa-check"></i> Multiple Options Available</li>
-                                        <li><i class="fas fa-check"></i> Scalable Solutions</li>
-                                        <li><i class="fas fa-check"></i> Flexible Pricing</li>
-                                        <li><i class="fas fa-check"></i> View Details Inside</li>
-                                    </ul>
-                                </div>
-                                <div class="pricing-table__footer">
-                                    <a href="{$productGroup->getRoutePath()}" class="btn btn-primary">View Plans</a>
-                                </div>
-                            {/if}
+                            {* Product groups don't have prices - only individual products do *}
+                            {* Show a call-to-action instead of price *}
+                            <div class="pricing-table__price">
+                                <span class="price" style="font-size: 1.25rem; font-weight: 600;">View Plans</span>
+                                <span class="period"></span>
+                            </div>
+                            <div class="pricing-table__features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Multiple Options Available</li>
+                                    <li><i class="fas fa-check"></i> Scalable Solutions</li>
+                                    <li><i class="fas fa-check"></i> Flexible Pricing</li>
+                                    <li><i class="fas fa-check"></i> 24/7 Support</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-table__footer">
+                                <a href="{$productGroup->getRoutePath()}" class="btn btn-primary">View Plans</a>
+                            </div>
                         </div>
                     </div>
                 {/foreach}
