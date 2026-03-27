@@ -1,13 +1,14 @@
 <!-- Schema.org Structured Data for SEO -->
+{literal}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Web Hosting Services",
-  "url": "{$systemurl}",
+  "url": "{/literal}{$systemurl}{literal}",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "{$systemurl}knowledgebase.php?action=search&query={search_term_string}",
+    "target": "{/literal}{$systemurl}{literal}knowledgebase.php?action=search&query={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }
@@ -18,8 +19,8 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Web Hosting Company",
-  "url": "{$systemurl}",
-  "logo": "{$systemurl}assets/img/logo.png",
+  "url": "{/literal}{$systemurl}{literal}",
+  "logo": "{/literal}{$systemurl}{literal}assets/img/logo.png",
   "sameAs": [
     "https://facebook.com/yourpage",
     "https://twitter.com/yourhandle",
@@ -74,6 +75,7 @@
   }
 }
 </script>
+{/literal}
 
 <style>
     .master-breadcrumb,
